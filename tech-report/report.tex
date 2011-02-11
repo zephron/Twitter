@@ -1,0 +1,75 @@
+
+\documentclass[10pt,twocolumn]{IEEEtran11}
+
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\oddsidemargin -15pt
+\evensidemargin -15pt
+\leftmargin 0 pt
+\topmargin -30pt
+\textwidth = 6.9 in
+\textheight = 9.0 in
+
+\newcommand{\itembase}{\setlength{\itemsep}{0pt}}
+\newcommand{\eg}{{\it e.g., }}
+\newcommand{\ie}{{\it i.e., }}
+\graphicspath{{FIG/}}
+
+\begin{document}
+\bibliographystyle{IEEE}
+
+\title{\Large \bf CIS 632 - Technical Report: Twitter Project
+%\thanks{
+}
+
+\author{Adam Bates and Lara Letaw\\
+Department of Computer \& Information Sciences\\
+University of Oregon\\
+\textit{\{amb,zephron\}@cs.uoregon.edu}}
+
+\maketitle
+% You have to do this to suppress page numbers.  Don't ask.
+%\pagestyle{empty}
+%\begin{abstract}
+%Write your abstract here
+%\end{abstract}
+
+%\begin{keywords} 
+%Keywords
+%\end{keywords}
+
+%\section{Introduction}
+%\input{intro}
+
+\section{Motivation}  
+\input{motivation}
+
+\section{Related Work}  
+\input{related-work}
+
+\section{Methodology}
+\input{methodology}
+
+\section{Evaluation}
+\input{evaluation}
+
+\section{Timetable}
+\input{timetable}
+
+\onecolumn
+\section{User Attributes}
+\input{user-attributes}
+
+\twocolumn
+\section{Dataset Profile}
+\input{dataset-profile}
+
+\bibliography{citations}
+\end{document}
