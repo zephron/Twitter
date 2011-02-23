@@ -54,6 +54,7 @@ ko & Korean & 337 & 0.141 \\ \hline
 \end{tabular}
 
 \subsubsection{UTC Offset}
+Time zone, which appears later in this document, is essentially UTC offset data with redundancy -- some time zones have the same UTC offset.\\\\
 \begin{tabular}{| l | l | l |}
 \hline
 \textbf{UTC Offset} & \textbf{\# (Core)} & \textbf{\% (Core)} \\ \hline
@@ -153,14 +154,28 @@ International Date Line West	&	216	&	0.091	&	Georgetown	&	28	&	0.012	\\ \hline
 
 \onecolumn
 \subsubsection{Status Source}
-Source of the most recent tweet.  Only the top 50 sources are included here.\\\\
+Source of the most recent tweet.  Only the top 50 sources are included here.  We have not decided what to do with this information.  One problem with this data is that it is per-tweet.  That is, a user could have multiple tweet locations, and we are not capturing that data.  These are only the sources of the most recent tweets.\\\\
 \includegraphics[width=6in,bb=0 0 612 792,keepaspectratio=true]{./sources.pdf}
 % sources.pdf: 612x792 pixel, 72dpi, 21.59x27.94 cm, bb=0 0 612 792
 
 \twocolumn
 \subsection{Location}
-\noindent Location data is entered free-form.  That is, a user can set their location field to anything they want.  In order to use the location data, we need to figure out which locations are not valid, and we need to transform valid locations into a format that can be processed.  For example, we want all users from San Francisco to have a location attribute of \textit{San Francisco, CA, USA}, so that we can easily determine which users share a location.  We are using the Google Maps Geocoding API to make this conversion.  When the API returns more than one result, we can either remove those location from our analysis, try a different method of processing, or try to determine the commonality between multiple results (if, for example, all results are in France, we can use France in our analysis).  When the API returns zero results, we cannot use the location data.\\\\
-The Geocoding API has some amount of error.  The returned results are not always a correct transformation of the original location.  We cannot manually examine each result for error, but we do plan to look at a subset of the results and derive a general error rate from that sample.\\\\
-The Geocoding API is rate-limited to 2,500 queries per day per IP address.  Google Maps API Premier members can query up to 100,000 per day, but that service starts at \$10,000, so is probably beyond the budget of this project. Yahoo also has a Geocoding API, to which we can make 5,000 calls per day.  However, we would prefer not to complicate the data collection by using both Google and Yahoo services.\\\\
-Rate-limiting of Geocoding queries is an issue we need to address urgently.  We either need to find a way to make more requests to the API without breaking the terms of service, or we need to get the information from the Google or Yahoo front-end.  Alternatively, we could design our own location-conversion script, but we see this as non-ideal.
+
+\noindent The location attribute is a free-form value.  That is, a user can set their location to anything they want.  In order to the use the location data, we must filter and interpret these values.  The goal is to map a single geographical location to each user, but the location data is not well-formed.  Location data is sometimes not entered, non-specific (Ex: ``Under your bed"), multiple (Ex: ``NYC \& San Francisco"), or simply a non-loaction (Ex: ``Blahhhhh").\\\\
+Our approach is to match each user's location against a list of known valid locations.  We are getting the list of locations from the World Cities Database (\url{http://www.maxmind.com/app/worldcities}).  World Cities has a list of all cities, regions, and countries in the world.  We first tried to match the beginning of each user's location attribute with a city.  That is, the user location could match the World Cities location exactly, or it could include characters beyond the World Cities location.  Also, capitalization is ignored.  We performed similar searches with region and country.  Overall, there were approximately 7 million users matched with a location, out of the 14.5 million total.\\\\
+Some users were matched with more than one location.  For these users, we need to make a more specific location match by appending to the location string.  For example, if a user matches many cities with the name ``Springfield", we can search for ``Springfield, OR", or ``Springfield, Oregon", or ``Springfield, IL", etc.\\\\
+For the users that do not match a location, we need to examine why.  We need to estimate what proportion of the non-match are non-locations, non-entered, or ill-formed.  This will be done by manual examination of a subset of the data.  We need to determine an accectable size for this subset.\\\\ 
+\begin{tabular}{| l | l |}
+\hline
+\textbf{Match Criterion} & \textbf{Number of Users} \\ \hline
+One or more cities &  \\ \hline
+Exactly one city & \\ \hline
+One or more regions & 2,442,249 \\ \hline
+Exactly one region & \\ \hline
+One or more countries & 1,175,514 \\ \hline
+Exactly one country & 1,164,406 (99.1\%) \\ \hline
+\end{tabular}\\\\
+
+\subsubsection{Other Approaches}
+\noindent The Google Maps and Yahoo Maps Geocoding APIs provide translation from user-entered location strings to geographical locations.  For example, Google Maps knows that ``The City by the Bay" is San Francisco.  There are obvious advantages of this functionality, but we are unable to use these services because of strict rate-limiting.  The Geocoding API is rate-limited to 2,500 queries per day per IP address, and the Yahoo Geocoding API has a 5,000 queries per day limit.\\\\
 
