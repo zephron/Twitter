@@ -3,11 +3,12 @@
 
 \begin{tabular}[t]{| l | l | l | l | l | l |}
 \hline
-& \textbf{Total} & \textbf{\# Available} & \textbf{\% Available} & \textbf{\# Unavailable} & \textbf{\% Unavailable} \\ \hline
-\textbf{All} & 17,688,493 & 17,475,570 & 98.8\% & 212,923 & 1.2\% \\ \hline
-\textbf{Core} & 242,275 & 238,323 & 98.8\% & 3,952 & 1.2\% \\ \hline
-\textbf{Connected} & 15,548,091 & & & & \\ \hline
-\textbf{Random} & & & & & \\ \hline
+& \textbf{Total} & \multicolumn{2}{|c|}{\textbf{Available}} & \multicolumn{2}{|c|}{\textbf{Unavailable}} \\ \hline
+\textbf{Data Set} & \textbf{\#} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} \\ \hline
+All & 17,688,493 & 17,475,570 & 98.8\% & 212,923 & 1.2\% \\ \hline
+Core & 242,275 & 238,323 & 98.8\% & 3,952 & 1.2\% \\ \hline
+Connected & 15,548,091 & & & & \\ \hline
+Random & & & & & \\ \hline
 \end{tabular}
 
 \subsection{Subgraphs}
@@ -25,18 +26,19 @@ Total Connected Users & 240,932 \\ \hline
 \end{tabular}
 
 \subsection{Boolean User Attributes}
-Attributes whose values are either \textit{true} or \textit{false}.\\
+Number and percentages of users with a \textit{true} value for boolean attributes.\\
 
-\begin{tabular}{| l | l | l |}
+\begin{tabular}{| l | l | l | l | l | l | l | l | l |}
 \hline
-\textbf{Attribute} & \textbf{\# True (Core)} & \textbf{\% True (Core)} \\ \hline
-Protected & 8,517 & 3.575  \\ \hline
-Geo-Enabled & 58,432 & 24.518 \\ \hline
-Verified & 119 & 0.050 \\ \hline
-Contributors Enabled & 7 & 0.003 \\ \hline
-Show All Inline Media & 18,870 & 7.918 \\ \hline
-URL & 118,364 & 49.665 \\ \hline
-Is Translator & 72 & 0.030 \\ \hline
+& \multicolumn{2}{|c|}{\textbf{All}} & \multicolumn{2}{|c|}{\textbf{Core}} & \multicolumn{2}{|c|}{\textbf{Connected}} & \multicolumn{2}{|c|}{\textbf{Random}} \\ \hline
+\textbf{Attribute} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} \\ \hline
+Protected & & & 8,517 & 3.575 & & & & \\ \hline
+Geo-Enabled & & & 58,432 & 24.518 & & & & \\ \hline
+Verified & & & 119 & 0.050 & & & & \\ \hline
+Contributors Enabled & & & 7 & 0.003 & & & & \\ \hline
+Show All Inline Media & & & 18,870 & 7.918 & & & & \\ \hline
+URL & & & 118,364 & 49.665 & & & & \\ \hline
+Is Translator & & & 72 & 0.030 & & & & \\ \hline
 \end{tabular}
 
 \subsection{Enumerated User Attributes}
@@ -44,16 +46,17 @@ Attributes for which there are a relatively small number of values, other than b
 \subsubsection{Language}
 Percentage of users per language.\\
 
-\begin{tabular}{| l | l | l | l | l | l | l | l |}
+\begin{tabular}{| l | l | l | l | l | l | l | l | l | l |}
 \hline
-\textbf{Language Code} & \textbf{Language} & \textbf{\# (All)}  & \textbf{\% (All)} & \textbf{\# (Core)}  & \textbf{\% (Core)} & \textbf{\# (Random)} & \textbf{\% (Random)} \\ \hline
-en & English & 11,553,068 & 78.996 & 173,782 & 72.919 & & \\ \hline
-es & Spanish & 1,426,063 & 9.751 & 16,210 & 6.802 & & \\ \hline
-ja & Japanese & 1,360,341 & 9.302 & 44,499 & 18.672 & & \\ \hline
-fr & French & 111,423 & 0.762 & 1,222 & 0.513 & & \\ \hline
-de & German & 107,880 & 0.738 & 1,560 & 0.655 & & \\ \hline
-it & Italian & 54,948 & 0.376 & 713 & 0.299 & & \\ \hline
-ko & Korean & 11,114 & 0.076 & 337 & 0.141 & & \\ \hline
+& & \multicolumn{2}{|c|}{\textbf{All}} & \multicolumn{2}{|c|}{\textbf{Core}} & \multicolumn{2}{|c|}{\textbf{Connected}} & \multicolumn{2}{|c|}{\textbf{Random}} \\ \hline
+\textbf{Code} & \textbf{Language} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} \\ \hline
+en & English & 11,553,068 & 78.996 & 173,782 & 72.919 & & & & \\ \hline
+es & Spanish & 1,426,063 & 9.751 & 16,210 & 6.802 & & & & \\ \hline
+ja & Japanese & 1,360,341 & 9.302 & 44,499 & 18.672 & & & & \\ \hline
+fr & French & 111,423 & 0.762 & 1,222 & 0.513 & & & & \\ \hline
+de & German & 107,880 & 0.738 & 1,560 & 0.655 & & & & \\ \hline
+it & Italian & 54,948 & 0.376 & 713 & 0.299 & & & & \\ \hline
+ko & Korean & 11,114 & 0.076 & 337 & 0.141 & & & & \\ \hline
 \end{tabular}
 
 \subsubsection{UTC Offset}
