@@ -1,17 +1,18 @@
 
-\textit{Available users} are those for which user profile data was successfully collected.  Unavailable users are those for whom an attempt to acquire user attributes resulted in a \textit{404 Not Found} error.  We assume these user accounts are closed.\\ 
-\begin{tabular}[t]{| l | l |}
+\textit{Available users} are those for which user profile data was successfully collected.  Unavailable users are those for whom an attempt to acquire user attributes resulted in a \textit{404 Not Found} error.  We assume these user accounts are closed.\\
+
+\begin{tabular}[t]{| l | l | l | l | l | l |}
 \hline
-Users & 17,688,493  \\ \hline
-Available Users & 17,475,570 (98.8\%) \\ \hline
-Unavailable Users & 212,923 (1.2\%) \\ \hline
-Core Users & 242,275 \\ \hline
-Available Core Users & 238,323 (98.8\% of core) \\ \hline
-Unavailable Core Users & 3,952 (1.2\% of core) \\ \hline
+& \textbf{Total} & \textbf{\# Available} & \textbf{\% Available} & \textbf{\# Unavailable} & \textbf{\% Unavailable} \\ \hline
+\textbf{All} & 17,688,493 & 17,475,570 & 98.8\% & 212,923 & 1.2\% \\ \hline
+\textbf{Core} & 242,275 & 238,323 & 98.8\% & 3,952 & 1.2\% \\ \hline
+\textbf{Connected} & 15,548,091 & & & & \\ \hline
+\textbf{Random} & & & & & \\ \hline
 \end{tabular}
 
 \subsection{Subgraphs}
-\textit{Graph edges} refers to the connections between core users and any other user.\\\\
+\textit{Graph edges} refers to the connections between core users and any other user.\\
+
 \begin{tabular}{| l | l | }
 \hline
 Users is Subgraph 1 & 15,548,091 \\ \hline
@@ -24,7 +25,8 @@ Total Connected Users & 240,932 \\ \hline
 \end{tabular}
 
 \subsection{Boolean User Attributes}
-Attributes whose values are either \textit{true} or \textit{false}.\\\\
+Attributes whose values are either \textit{true} or \textit{false}.\\
+
 \begin{tabular}{| l | l | l |}
 \hline
 \textbf{Attribute} & \textbf{\# True (Core)} & \textbf{\% True (Core)} \\ \hline
@@ -40,17 +42,18 @@ Is Translator & 72 & 0.030 \\ \hline
 \subsection{Enumerated User Attributes}
 Attributes for which there are a relatively small number of values, other than boolean values.
 \subsubsection{Language}
-Percentage of users per language.\\\\
-\begin{tabular}{| l | l | l | l | l | l | }
+Percentage of users per language.\\
+
+\begin{tabular}{| l | l | l | l | l | l | l | l |}
 \hline
-\textbf{Language Code} & \textbf{Language} & \textbf{\# (All)}  & \textbf{\% (All)} & \textbf{\# (Core)}  & \textbf{\% (Core)} \\ \hline
-en & English & 11,553,068 & 78.996 & 173,782 & 72.919 \\ \hline
-es & Spanish & 1,426,063 & 9.751 & 16,210 & 6.802 \\ \hline
-ja & Japanese & 1,360,341 & 9.302 & 44,499 & 18.672 \\ \hline
-fr & French & 111,423 & 0.762 & 1,222 & 0.513 \\ \hline
-de & German & 107,880 & 0.738 & 1,560 & 0.655 \\ \hline
-it & Italian & 54,948 & 0.376 & 713 & 0.299 \\ \hline
-ko & Korean & 11,114 & 0.076 & 337 & 0.141 \\ \hline
+\textbf{Language Code} & \textbf{Language} & \textbf{\# (All)}  & \textbf{\% (All)} & \textbf{\# (Core)}  & \textbf{\% (Core)} & \textbf{\# (Random)} & \textbf{\% (Random)} \\ \hline
+en & English & 11,553,068 & 78.996 & 173,782 & 72.919 & & \\ \hline
+es & Spanish & 1,426,063 & 9.751 & 16,210 & 6.802 & & \\ \hline
+ja & Japanese & 1,360,341 & 9.302 & 44,499 & 18.672 & & \\ \hline
+fr & French & 111,423 & 0.762 & 1,222 & 0.513 & & \\ \hline
+de & German & 107,880 & 0.738 & 1,560 & 0.655 & & \\ \hline
+it & Italian & 54,948 & 0.376 & 713 & 0.299 & & \\ \hline
+ko & Korean & 11,114 & 0.076 & 337 & 0.141 & & \\ \hline
 \end{tabular}
 
 \subsubsection{UTC Offset}
