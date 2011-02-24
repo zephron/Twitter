@@ -1,20 +1,20 @@
 
 \textit{Available users} are those for which user profile data was successfully collected.  Unavailable users are those for whom an attempt to acquire user attributes resulted in a \textit{404 Not Found} error.  We assume these user accounts are closed.\\
 
-\begin{tabular}[t]{| l | l | l | l | l | l |}
+\begin{tabular}[t]{| l | r | r | r | r | r |}
 \hline
 & \textbf{Total} & \multicolumn{2}{|c|}{\textbf{Available}} & \multicolumn{2}{|c|}{\textbf{Unavailable}} \\ \hline
 \textbf{Data Set} & \textbf{\#} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} \\ \hline
-All & 17,688,493 & 17,475,570 & 98.8\% & 212,923 & 1.2\% \\ \hline
-Core & 242,275 & 238,323 & 98.8\% & 3,952 & 1.2\% \\ \hline
-Connected & 15,548,091 & & & & \\ \hline
-Random & & & & & \\ \hline
+All & 17,688,493 & 17,475,570 & 98.8 & 212,923 & 1.2 \\ \hline
+Core & 242,275 & 238,323 & 98.8 & 3,952 & 1.2 \\ \hline
+Connected & 15,548,091 & 14,624,837 & 94.1 & 923,254 & 5.9 \\ \hline
+Random & 1,805,758 & 1,805,758 & 100 & 0 & 0 \\ \hline
 \end{tabular}
 
 \subsection{Subgraphs}
 \textit{Graph edges} refers to the connections between core users and any other user.\\
 
-\begin{tabular}{| l | l | }
+\begin{tabular}{| l | r | }
 \hline
 Users is Subgraph 1 & 15,548,091 \\ \hline
 Available Users is Subgraph 1 & 15,363,277 \\ \hline
@@ -26,37 +26,47 @@ Total Connected Users & 240,932 \\ \hline
 \end{tabular}
 
 \subsection{Boolean User Attributes}
-Number and percentages of users with a \textit{true} value for boolean attributes.\\
+Number and percentages of users with a \textit{true} value for boolean attributes.
 
-\begin{tabular}{| l | l | l | l | l | l | l | l | l |}
+\begin{verbatim}
+   SELECT COUNT(*) FROM table WHERE attribute='true';
+   SELECT COUNT(*) FROM table WHERE url!='' and url is not NULL;
+\end{verbatim}
+
+\begin{tabular}{| l | r | r | r | r | r | r | r | r |}
 \hline
-& \multicolumn{2}{|c|}{\textbf{All}} & \multicolumn{2}{|c|}{\textbf{Core}} & \multicolumn{2}{|c|}{\textbf{Connected}} & \multicolumn{2}{|c|}{\textbf{Random}} \\ \hline
-\textbf{Attribute} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} \\ \hline
-Protected & & & 8,517 & 3.575 & & & & \\ \hline
-Geo-Enabled & & & 58,432 & 24.518 & & & & \\ \hline
-Verified & & & 119 & 0.050 & & & & \\ \hline
-Contributors Enabled & & & 7 & 0.003 & & & & \\ \hline
-Show All Inline Media & & & 18,870 & 7.918 & & & & \\ \hline
-URL & & & 118,364 & 49.665 & & & & \\ \hline
-Is Translator & & & 72 & 0.030 & & & & \\ \hline
+& \multicolumn{2}{|c|}{\textbf{Core}} & \multicolumn{2}{|c|}{\textbf{Connected}} & \multicolumn{2}{|c|}{\textbf{Random}} \\ \hline
+\textbf{Attribute} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} \\ \hline
+Protected & 8,517 & 3.6 & 1,731,662 & 11.8 & N/A & N/A \\ \hline
+Geo-Enabled & 58,432 & 24.5 & 2,573,007 & 17.6 & N/A & N/A \\ \hline
+Verified & 119 & 0.1 & 933 & 0.0 & N/A & N/A \\ \hline
+Contributors Enabled & 7 & 0.0 & 115 & 0.0 & N/A & N/A \\ \hline
+Show All Inline Media & 18,870 & 7.9 & 788,201 & 5.4 & N/A & N/A \\ \hline
+URL & 118,364 & 49.7 & 5,214,015  & 35.7 & N/A & N/A \\ \hline
+Is Translator & 72 & 0.0 & 1,479 & 0.0 & N/A & N/A \\ \hline
 \end{tabular}
 
 \subsection{Enumerated User Attributes}
 Attributes for which there are a relatively small number of values, other than boolean values.
 \subsubsection{Language}
-Percentage of users per language.\\
+Percentage of users per language.
 
-\begin{tabular}{| l | l | l | l | l | l | l | l | l | l |}
+\begin{verbatim}
+   SELECT lang, COUNT(id) FROM table GROUP BY lang;
+\end{verbatim}
+
+\begin{tabular}{| l | l |  r | r | r | r | r | r | r |}
 \hline
-& & \multicolumn{2}{|c|}{\textbf{All}} & \multicolumn{2}{|c|}{\textbf{Core}} & \multicolumn{2}{|c|}{\textbf{Connected}} & \multicolumn{2}{|c|}{\textbf{Random}} \\ \hline
-\textbf{Code} & \textbf{Language} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} \\ \hline
-en & English & 11,553,068 & 78.996 & 173,782 & 72.919 & & & & \\ \hline
-es & Spanish & 1,426,063 & 9.751 & 16,210 & 6.802 & & & & \\ \hline
-ja & Japanese & 1,360,341 & 9.302 & 44,499 & 18.672 & & & & \\ \hline
-fr & French & 111,423 & 0.762 & 1,222 & 0.513 & & & & \\ \hline
-de & German & 107,880 & 0.738 & 1,560 & 0.655 & & & & \\ \hline
-it & Italian & 54,948 & 0.376 & 713 & 0.299 & & & & \\ \hline
-ko & Korean & 11,114 & 0.076 & 337 & 0.141 & & & & \\ \hline
+& & \multicolumn{2}{|c|}{\textbf{Core}} & \multicolumn{2}{|c|}{\textbf{Connected}} & \multicolumn{3}{|c|}{\textbf{Random}} \\ \hline
+\textbf{Code} & \textbf{Language} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\#} & \textbf{\%} & \textbf{\% (of non-blank)} \\ \hline
+en & English & 173,782 & 72.9 & 11,553,068 & 79.0 & 1,091,399 & 60.4 & 86.8 \\ \hline
+es & Spanish & 16,210 & 6.8 & 1,426,063 & 9.8 & 86,785 & 4.8 & 6.9 \\ \hline
+ja & Japanese & 44,499 & 18.7 & 1,360,341 & 9.3 & 55,897 & 3.1 & 4.4 \\ \hline
+fr & French & 1,222 & 0.5 & 111,423 & 0.8 & 12,245 & 0.7 & 1.0 \\ \hline
+de & German & 1,560 & 0.7 & 107,880 & 0.7 & 7,077 & 0.4 & 0.6 \\ \hline
+it & Italian & 713 & 0.3 & 54,948 &  0.4 & 4,536 & 0.3 & 0.4 \\ \hline
+ko & Korean & 337 & 0.1 & 11,114 & 0.1 & 0 & 0 & 0 \\ \hline
+(none) & (none) & 0 & 0 & 0 & 0 & 547,819 & 30.3 & 0 \\ \hline
 \end{tabular}
 
 \subsubsection{UTC Offset}
