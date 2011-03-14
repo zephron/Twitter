@@ -26,7 +26,7 @@
 \begin{document}
 \bibliographystyle{IEEE}
 
-\title{\Large \bf Assessing Connectivity Bias in the Twitter Network
+\title{\Large \bf CIS 632 - Technical Report: Twitter Project
 %\thanks{
 }
 
@@ -48,28 +48,22 @@ Online social network, Twitter, Measurement, Overlay topology
 \end{keywords}
 
 \section{Introduction}
-\label{sec:introduction}
 \input{intro}
 
-\section{Data Collection}
-\label{sec:datacollection}
-\input{datacollection}
-
-\section{Methodology}
-\label{sec:methodology}
-\input{methodology}
-
-\section{Analysis}
-\label{sec:analysis}
-\input{analysis}
+\section{Motivation}  
+\input{motivation}
 
 \section{Related Work}  
-\label{sec:relatedwork}
 \input{related-work}
 
-\section{Conclusion}
-\label{sec:conclusion}
-\input{conclusion}
+\section{Methodology}
+\input{methodology}
+
+\section{Evaluation}
+\input{evaluation}
+
+\section{Timetable}
+\input{timetable}
 
 \onecolumn
 \section{User Attributes}

@@ -16,8 +16,8 @@ Random & 1,805,758 & 1,529,897 & 84.7 & 275,861 & 15.3  \\ \hline
 
 \begin{tabular}{| l | r | }
 \hline
-Users in Subgraph 1 & 15,548,091 \\ \hline
-Available Users in Subgraph 1 & 15,363,277 \\ \hline
+Users is Subgraph 1 & 15,548,091 \\ \hline
+Available Users is Subgraph 1 & 15,363,277 \\ \hline
 Core Users in Subgraph 1  & 194,004 \\ \hline
 Remaining Core Users  & 48,267 \\ \hline
 Remaining Subgraphs  & 46,403 \\ \hline

@@ -17,3 +17,8 @@ It is also possible to conduct a biased sampling.  Here, interesting users with 
 Our approach finds a healthy compromise between these competing priorities by starting with a biased sample and then performing a mult-hop crawl across a small piece of the network to conduct further sampling.  This crawl creates a snapshot of a part of Twitter that is acceptably representative while simultaneously ensuring that rare users are acceptably prominent.  We establish that our snapshot is representative by comparing its profile to the profile of a true random sample.\\
 
 STILL NEED TO PUT A SUMMARY OF OUR WORK APPROACH AND MAIN FINDINGS HERE (AS PER REZA'S REPORT DESCRIPTION)
+
+\textit{OLD STUFF}
+Following actions can be aggregated to make an assessment of the influence level of a given user.  This central concept in Twitter's network, as evidenced by the prominently displayed ``Follower'' and Following`` counts on each users' home page.
+
+Our project will investigate the relationship between Twitter connectivity and various user attributes, including geographic location.  To do this, we have acquired a subset of the Twitter user base that is highly connected.  We plan to observe the intra- and inter- propagation of data for these various attributes within our subgraphs.

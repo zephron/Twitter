@@ -4,17 +4,24 @@ Paragraph -- introduce results. \\
 \subsection{State}
 \subsection{UTC Offset}
 \subsection{Language}
-\begin{figure}
- \centering
- \includegraphics[bb=0 0 208 130]{lang_OUT.png}
- % lang_OUT.png: 277x173 pixel, 96dpi, 7.33x4.58 cm, bb=0 0 208 130
- \label{fig:lang}
-\end{figure}
-
 \subsection{Geo-Enabled}
 \subsection{Protected}
 \subsection{Follower Count}
+\begin{figure}
+ \centering
+ \includegraphics[bb=0 0 640 480,scale=.25]{./images/testimages/follower_count_OUT.png}
+ % evidence.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
+ \caption{Check out this totally badass heatmap.}
+ \label{follower_count}
+\end{figure}
 \subsection{Friend Count}
+\begin{figure}
+ \centering
+ \includegraphics[bb=0 0 640 480,scale=.25]{./images/testimages/friend_count_OUT.png}
+ % evidence.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
+ \caption{Check out this totally badass heatmap.}
+ \label{friend_count}
+\end{figure}
 \subsection{Statuses Count}
 \subsection{Listed Count}
 

@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+
+\bibitem{CCL10}
+Z.~Cheng, J.~Caverlee, and K.~Lee,
+\newblock ``You are whare you tweet: A content-based approach to geo-locating
+  twitter users,''
+\newblock in {\em Proceedings of the CIKM}, 2010.
+
+\bibitem{LG10}
+K.~Lerman and R.~Ghosh,
+\newblock ``Information contagion: An empirical study of the spread of news on
+  digg and twitter social networks,''
+\newblock in {\em Proceedings of the {AAAI} Conference on Weblogs and Social
+  Media}, 2010.
+
+\bibitem{SM09}
+E.~Sadikov and M.~Martinez,
+\newblock ``Information propagation on twitter,''
+\newblock in {\em Proceedings of the {ACM}}, 2009.
+
+\end{thebibliography}

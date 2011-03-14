@@ -1,0 +1,32 @@
+
+@string{acm-sigcomm = " {ACM} SIGCOMM "};   # as in the conference
+@string{proc = "Proceedings of the "};
+
+
+@InProceedings{Floyd:SIGCOMM00,
+author = "S. Floyd and M. Handley and J. Padhye and J. Widmer",
+title = "Equation-Based Congestion Control for Unicaqt Applications",
+booktitle =     proc # acm-sigcomm,
+year =  2000,
+}
+
+@InProceedings{CCL10,
+author = "Z. Cheng and J. Caverlee and K. Lee",
+title = "You Are Whare You Tweet: A Content-Based Approach to Geo-locating Twitter Users",
+booktitle = proc # "CIKM",
+year = 2010,
+}
+
+@InProceedings{LG10,
+author = "K. Lerman and R. Ghosh",
+title = "Information Contagion: An Empirical Study of the Spread of News on Digg and Twitter Social Networks",
+booktitle = proc # "{AAAI} Conference on Weblogs and Social Media",
+year = 2010,
+}
+
+@InProceedings{SM09,
+author = "E. Sadikov and M. Martinez",
+title = "Information Propagation on Twitter", 
+booktitle = proc # {ACM},
+year = "2009",
+}
