@@ -72,7 +72,7 @@ Online social network, Twitter, Measurement, Overlay topology
 \input{conclusion}
 
 \onecolumn
-\section{User Attributes}
+\appendix{User Attributes}
 \input{user-attributes}
 
 \section{Dataset Profile}

@@ -18,7 +18,4 @@ Our approach finds a healthy compromise between these competing priorities by st
 
 STILL NEED TO PUT A SUMMARY OF OUR WORK APPROACH AND MAIN FINDINGS HERE (AS PER REZA'S REPORT DESCRIPTION)
 
-\textit{OLD STUFF}
-Following actions can be aggregated to make an assessment of the influence level of a given user.  This central concept in Twitter's network, as evidenced by the prominently displayed ``Follower'' and Following`` counts on each users' home page.
-
-Our project will investigate the relationship between Twitter connectivity and various user attributes, including geographic location.  To do this, we have acquired a subset of the Twitter user base that is highly connected.  We plan to observe the intra- and inter- propagation of data for these various attributes within our subgraphs.
+The rest of this paper is organized as follows.  We outline our data collection process in section \ref{sec:datacollection}.  In section \ref{sec:methodology}, we present our method for evaluating connectivity bias within the Twitter network.  Analysis of our results is contained in section \ref{sec:analysis}.  We review some of the related work in section \ref{sec:relatedwork}.  Section \ref{sec:conclusion} concludes the paper.

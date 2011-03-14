@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.2.10)  13 MAR 2011 23:49
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.2.10)  14 MAR 2011 01:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -394,174 +394,55 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 41.
  (./intro.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
+Underfull \hbox (badness 1231) in paragraph at lines 19--20
+\T1/ptm/m/n/10 AP-PROACH AND MAIN FIND-INGS HERE (AS PER
  []
 
 [1
 
 
-])
-Underfull \hbox (badness 1231) in paragraph at lines 19--53
-\T1/ptm/m/n/10 AP-PROACH AND MAIN FIND-INGS HERE (AS PER
- []
-
-(./methodology.tex
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
- []
+]) (./datacollection.tex
+Underfull \vbox (badness 2635) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 19.
+
 
 LaTeX Warning: Reference `fo-cdr' on page 2 undefined on input line 19.
 
 
 LaTeX Warning: Reference `fr-cdr' on page 2 undefined on input line 19.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-) (./evaluation.tex
-File: ./images/evidence.png Graphic file (type eps)
- <./images/evidence.png>) (./analysis.tex
+) (./methodology.tex [2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 17.
+) (./analysis.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
 
-LaTeX Warning: File `lang_OUT.png' not found on input line 9.
-
-File: lang_OUT.png Graphic file (type eps)
-<lang_OUT.png>
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-
-Underfull \vbox (badness 4001) has occurred while \output is active []
-
 )
-Underfull \hbox (badness 10000) in paragraph at lines 23--65
+Underfull \hbox (badness 10000) in paragraph at lines 16--65
 
  []
 
 (./related-work.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--68
+Underfull \hbox (badness 10000) in paragraph at lines 1--69
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1--68
-
- []
-
-[3] (./conclusion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 3--71
-
- []
-
-[4
+[3] (./conclusion.tex) [4
 
 ] (./user-attributes.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
+Underfull \hbox (badness 10000) in paragraph at lines 75--2
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--5
 []\T1/ptm/b/n/10 # of Bas-kets
@@ -658,12 +539,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1616 strings out of 495062
- 18301 string characters out of 1182644
+ 1608 strings out of 495062
+ 18257 string characters out of 1182644
  73859 words of memory out of 3000000
- 4720 multiletter control sequences out of 15000+50000
+ 4717 multiletter control sequences out of 15000+50000
  51021 words of font info for 110 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 32i,8n,24p,783b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,8n,24p,786b,186s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on report.dvi (8 pages, 39840 bytes).
+Output written on report.dvi (8 pages, 43576 bytes).
