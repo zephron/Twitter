@@ -39,7 +39,7 @@ University of Oregon\\
 % You have to do this to suppress page numbers.  Don't ask.
 \pagestyle{empty}
 \begin{abstract}
-Over the past few years Twitter has been at the forefront of the online social networking phenomenon.  Twitter experienced a growth rate of almost 1400\% between February 2008 and February 2009.  This surge in popularity has legitimized Twitter as a channel for communities to interact within the United States and across the globe.  Still in its nascent stages, there is much at that is unknown about the nature of interaction and influence within the Twitter network.\\
+Over the past few years Twitter has been at the forefront of the online social networking phenomenon.  Twitter experienced a growth rate of almost 1400\% between February 2008 and February 2009~\cite{lrossi:mcgiboney_twitters_2009}.  This surge in popularity has legitimized Twitter as a channel for communities to interact within the United States and across the globe.  Still in its nascent stages, there is much at that is unknown about the nature of interaction and influence within the Twitter network.\\
 This paper presents a detailed analysis of the nature of the relationships that exist between users within an online social network.  We have collected a complete subgraph of the Twitter network that contains tens of millions of users and hundred of millions of those users' relationships.  We profile this subgraph and explore its strengths and limitations by comparing it to a random sample of Twitter users.  We then characterize the connectivity of our dataset based on the user attributes associated with each Twitter account.  We use these results to identify a number of bias patterns that can be observed between different user groups.  It is our belief that these observations shed new light on the nature of the global community's Twitter usage.\\
 \end{abstract}
 
@@ -71,13 +71,14 @@ Online social network, Twitter, Measurement, Overlay topology
 \label{sec:conclusion}
 \input{conclusion}
 
+\bibliography{./citations.bib}
+
 \onecolumn
 \appendix{User Attributes}
+\label{app:user-attributes}
 \input{user-attributes}
 
 \section{Dataset Profile}
 \input{dataset-profile}
 
-\twocolumn
-\bibliography{citations}
 \end{document}

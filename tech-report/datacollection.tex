@@ -22,11 +22,85 @@ Figures \ref{fo-cdr} and \ref{fr-cdr} confirm that we have captured an accurate 
 
 \subsection{Profiling}
 
-Paragraph: Restate what we said in the introduction about how we need to compare our subgraph to a random subgraph in that magical way that papers manage to do.
+Our set of Twitter users was selected by first selecting 250,000 id's of users that met a certain time-in-system threshold, and then querying the Twitter API for all users connected to that initial core.  Since user connectivity is central to our study, this allowed us to quickly acquire a subgraph in which every node was usable.  However, since this collection method was not random, the distribution of attributes across our dataset could be different than that which we would observe by choosing random users.  These differences are important to examine because they may indicate ways that our dataset is not generalizable to the entire Twitter universe.
 
-GRAPHICS FOR EACH ATTRIBUTE!
+To quantify these potential discrepancies, we perform attribute profiling both on our connected subgraph and on a set of 1.5 million randomly-selected users.  We simply calculate the percentages of users falling into each attribute basket for each set, and compare.  In order to express to what extent our selection of the inital core users may have influenced the profile of the entire subgraph, for some attributes we also include distributions for the original 250K.
 
-Paragraphs summarizing the attributes.
+\subsubsection{Boolean Attributes}
 
-Paragraph: Conclude that our dataset is sufficiently representative of a random twitter sampling to warrant further investigation.  Make note of any attributes for which this is not the case.
+Two of the attributes we examined were true/false values: protected and geo-enabled.  Below is a table of percentages of users who enabled each attribute, for the core, connected, and random data sets.
+
+[table of percentages for boolean attribs]
+
+We find that our core users were less than half has likely to be protected, and more than three times more likely to allow the inclusion of GPS information in their tweets than the random users.  The percentage of geo-enabled users in the connected subgraph is in between that of core and random, which indicates that the original user selection could have carried over to the first-hop connections to some extent.  Interestingly, the subgraph users are more likely than either of the other sets to be protected.  This may be because users who are connected to the initial group, which we would characterize as more ``established", are more experienced than the average random user, as random users likely include many people who have signed up but have not made much use of their accounts.  The random set could, for example, include users who are not connected to anyone else.
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[bb=0 0 800 500,scale=.2]{./images/lang-core.png}
+ % lang-core.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
+ \caption{For the core set, the percentage users who have marked Japanese as their Twitter language is more than four times that of the random set.}
+\end{figure}
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[bb=0 0 800 500,scale=.2]{./images/lang-rand.png}
+  % lang-rand.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
+ \caption{English, Spanish, and Japanese are the top languages for both the connected and the random user sets.}
+\end{figure}
+
+\subsubsection{Language}
+
+Users have seven choices for the language attribute.  Choice of language affects the text of the Twitter interface, but does not translate tweets.  It is unclear whether the language changes based on the location (IP address) of the user, or if English is default for everyone.  We find that, in comparison to the random set, the connected and core users are substantially more likely to be configured for using Japanese.  This could indicate that the filtering techniques used to gather our original set of users was more likely to pick up Japanese users.
+
+[language table]
+
+\subsubsection{Location}
+
+Say how it lines up well with the census, too.
+
+\begin{figure}[t]
+ \centering
+ \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-conn.png}
+ % loca-conn.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
+\caption{}
+%\end{figure}
+
+%\begin{figure}
+% \centering
+ \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-rand.png}
+ % loca-rand.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
+\caption{}
+%\end{figure}
+
+%\begin{figure}
+% \centering
+ \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-actu.png}
+ % loca-actu.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
+\caption{The distribution of U.S. states for both the random and the connected datasets aligns well with the population census data.}
+\end{figure}
+
+\subsection{Approaching Attribute Analysis}
+
+\subsubsection{Location}
+
+The location attribute field has no enforced format, apart from length.  That is, users can type in essentially any text for their location.  From a small random sample and manual examination of this attribute field, we estimate that approximately 50\% of users provide location text that can be matched to at least one city, state/region, or country.  We also find that almost 90\% of users who match one city will match more than one city.  Since we want our analyses to be by specific location, we need to address these ambiguities.
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[bb=0 0 664 222,scale=.62]{./images/followers_count.png}
+ % followers_count.png: 885x296 pixel, 96dpi, 23.42x7.83 cm, bb=0 0 664 222
+ \label{fig:follower_count}
+ \caption{A connectivity bias chart for number of followers in logarithmically increasing groupings.}
+\end{figure*}
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[bb=0 0 746 221,scale=.55]{./images/friends_count.png}
+ % friends_count.png: 995x294 pixel, 96dpi, 26.33x7.78 cm, bb=0 0 746 221
+ \label{fig:friend_count}
+ \caption{A connectivity bias chart for number of friends in logarithmically increasing groupings.}
+\end{figure*}
+
+
+Given that there are hundreds of thousands of cities in the world, we decided to start our location analyses with U.S. states because of their familiarity to the authors.  Our approach is to filter users based on exact matches with a pre-compiled list of U.S. cities in the standard \textit{San Francisco, CA} or \textit{San Francisco, California} format.  If a user matches one of these locations exactly, the user cannot exactly match a different location.  For the top 100 most populous cities, we try to match the city name itself, without the state, with the intuition that, for example, users from \textit{San Francisco} would not find it necessary to specific their state.
 

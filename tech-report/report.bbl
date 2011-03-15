@@ -1,10 +1,53 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{lrossi:mcgiboney_twitters_2009}
+Michelle McGiboney,
+\newblock ``{Twitter's Tweet Smell Of Success},'' 2009.
+
+\bibitem{RS05}
+Reza Rejaie and Daniel Stutzbach,
+\newblock ``Characterizing unstructured overlay topologies in modern p2p
+  file-sharing systems,''
+\newblock in {\em In Internet Measurement Conference}, 2005, pp. 49--62.
+
+\bibitem{GTPS10}
+Chris Grier, Kurt Thomas, Vern Pazson, and Michael Shang,
+\newblock ``at spam: The underground on 140 characters or less,''
+\newblock in {\em In CCS '10: Proceedings of the 17th ACM conference on
+  Computer and Communications Security}, 2010, pp. 27--37.
+
+\bibitem{Yardi_Romero_Schoenebeck_Boyd_2010}
+Sarita Yardi, Daniel Romero, Grant Schoenebeck, and Danah~M Boyd,
+\newblock ``Detecting spam in a twitter network,''
+\newblock {\em First Monday}, vol. 15, no. 1, pp. 1--13, 2010.
+
+\bibitem{DBLP:journals/corr/abs-1011-3768}
+Jacob Ratkiewicz, Michael Conover, Mark Meiss, Bruno Gon\c{c}alves, Snehal
+  Patil, Alessandro Flammini, and Filippo Menczer,
+\newblock ``Detecting and tracking the spread of astroturf memes in microblog
+  streams,''
+\newblock {\em CoRR}, vol. abs/1011.3768, 2010.
 
 \bibitem{CCL10}
 Z.~Cheng, J.~Caverlee, and K.~Lee,
 \newblock ``You are whare you tweet: A content-based approach to geo-locating
   twitter users,''
 \newblock in {\em Proceedings of the CIKM}, 2010.
+
+\bibitem{Lee:2010:MGR:1867699.1867701}
+Ryong Lee and Kazutoshi Sumiya,
+\newblock ``Measuring geographical regularities of crowd behaviors for
+  twitter-based geo-social event detection,''
+\newblock in {\em Proceedings of the 2nd ACM SIGSPATIAL International Workshop
+  on Location Based Social Networks}, New York, NY, USA, 2010, LBSN '10, pp.
+  1--10, ACM.
+
+\bibitem{Fujisaka:2010:MGA:1880853.1880896}
+Tatsuya Fujisaka, Ryong Lee, and Kazutoshi Sumiya,
+\newblock ``Monitoring geo-social activities through micro-blogging sites,''
+\newblock in {\em Proceedings of the 15th international conference on Database
+  systems for advanced applications}, Berlin, Heidelberg, 2010, DASFAA'10, pp.
+  374--384, Springer-Verlag.
 
 \bibitem{LG10}
 K.~Lerman and R.~Ghosh,
