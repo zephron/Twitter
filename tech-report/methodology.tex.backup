@@ -1,0 +1,30 @@
+\subsection{Approaching Attribute Analysis}
+
+Although each user account is associated with 33 publicly available attributes, only a few of these were of any interest for our purposes.  10 of the attributes are profile display settings, which were not considered.  Another 6 are user identified such as name and ID which are not of any use to network-level analysis.  We initially identified 14 potential attributes of interest.  Further description of these attributes is available in appendix \ref{app:user-attributes}.
+
+After selecting attributes for consideration, we identified appropriate groupings for each attribute.  The format of the considered attributes took one of three forms.  These formats informed the manner in which they were grouped.  Many of the attributes had a finite number of options, such as a boolean value for \textit{Protected} or one of seven options for \textit{Language}.  A group was assigned for each possible value of these attributes.
+
+The next field format was that of a continuous integer range, such as \textit{Follower Count} or \textit{Status Count}.  For these, groups took the form of a range of values.  It was important to create groups in such a manner that rare, high values user were clearly visible in the results.  It was also important that the large population of low value users were represented.  To accomplished this, we increased the range of our groupings logarithmically.
+
+The final and most challenging format took the form a free text field.  Free text fields are used by the \textit{Bio}, \textit{URL} and \textit{Location} attributes.  Of these, only \textit{Location} was considered in our study.  After parsing this field for identifiable locations  on a variety of scales, it was decided that groupings by U.S. state would be the most impactful.  Of these, results for the top ten most popular states are included in this paper.
+
+Paragraph: Mention the simple random survey of records that was performed, the percentage of users with no entry, the percentage of users with an indecipherable entry, etc.
+
+After identifying discrete groupings for each attribute it became possible to identify attribute relationships within our dataset.  Each edge in our subgraph represents a relationship between two Twitter users, each with an group assignment for each attribute.  We created a unique identifier for all possible relationships for each attribute.  We then processed our dataset by assigning these identifiers and counting their frequency.
+
+\subsection{Measuring Bias}
+
+Through data processing we obtained a set of values $A_{XY}$, representing the actual count of each possible attribute relationship \textit{X follows Y}.  However, this value alone is insufficient for measuring network bias.  It does not consider the frequency of users of attribute $X$ or $Y$.  It also does not consider the total number of outgoing edges from $X$, $X_{out}$ ,or incoming edges to $Y$, $Y_{in}$.  Before network bias can be determined it is necessary to normalize $A_{XY}$ against the value one would expect in a randomized, bias-free version of the graph.  This value is given by:
+
+\[R_{XY} = \frac{X_{out}*Y_{in}}{\sum_{x,y,z}u}\]
+
+where $X_{out}$ is the number of outgoing edges from $X$, $Y_{out}$ is the number of incoming edges to $Y$, and $\sum_{x,y,z}u$ is the sum of all edges for all attribute values in the network.\\
+
+\[B_{XY}=\frac{A_{XY}-R_{XY}}{R_{XY}}\]
+Paragraph: Explain the basic challenge of deriving bias from the measured following patterns.
+
+Paragraph: Explain the method for calculating the expected connectivity in a randomized, bias-free version of our subgraph.  Include formula.
+
+Paragraph: Explain the method for calculating bias from this value and the measured values.  Include formula.
+
+

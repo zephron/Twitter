@@ -1,0 +1,100 @@
+\documentclass[10pt,twocolumn]{IEEEtran11}
+
+\usepackage{comment}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{url}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\oddsidemargin -15pt
+\evensidemargin -15pt
+\leftmargin 0 pt
+\topmargin -35pt
+\textwidth = 6.9 in
+\textheight = 9.1 in
+
+\newcommand{\itembase}{\setlength{\itemsep}{0pt}}
+\newcommand{\eg}{{\it e.g., }}
+\newcommand{\ie}{{\it i.e., }}
+\graphicspath{{FIG/}}
+
+\begin{document}
+\bibliographystyle{IEEE}
+
+\title{\Large \bf Assessing Connectivity Bias in the Twitter Network
+%\thanks{
+}
+
+\author{Adam Bates and Lara Letaw\\
+Department of Computer \& Information Science\\
+University of Oregon\\
+\textit{\{amb,zephron\}@cs.uoregon.edu}}
+
+\maketitle
+% You have to do this to suppress page numbers.  Don't ask.
+\pagestyle{empty}
+\begin{abstract}
+Over the past few years Twitter has been at the forefront of the online social networking phenomenon.  Twitter experienced a growth rate of almost 1400\% between February 2008 and February 2009~\cite{lrossi:mcgiboney_twitters_2009}.  This surge in popularity has legitimized Twitter as a channel for communities to interact within the United States and across the globe.  Still in its nascent stages, there is much that is unknown about the nature of interaction and influence within the Twitter network.\\
+This paper presents a detailed analysis of the nature of the relationships that exist between users within an online social network.  We have collected a complete subgraph of the Twitter network that contains tens of millions of users and hundred of millions of those users' relationships.  We profile this subgraph and explore its strengths and limitations by comparing it to a random sample of Twitter users.  We then characterize the connectivity of our dataset based on the user attributes associated with each Twitter account.  We use these results to identify a number of bias patterns that can be observed between different user groups.  It is our belief that these observations shed new light on the nature of the global community's Twitter usage.\\
+\end{abstract}
+
+\begin{keywords} 
+Online social network, Twitter, Measurement, Overlay topology
+\end{keywords}
+
+\section{Introduction}
+\label{sec:introduction}
+\input{intro}
+
+\section{Data Collection}
+\label{sec:datacollection}
+\input{datacollection}
+
+\section{Methodology}
+\label{sec:methodology}
+\input{methodology}
+
+\section{Analysis}
+\label{sec:analysis}
+\input{analysis}
+
+\section{Related Work}  
+\label{sec:relatedwork}
+\input{related-work}
+
+\section{Conclusion}
+\label{sec:conclusion}
+\input{conclusion}
+
+\bibliography{./citations.bib}
+
+\onecolumn
+\appendix{User Attributes}
+\label{app:user-attributes}
+\input{user-attributes}
+
+\appendix{Bias Comparisons Across Attributes}
+\label{app:table_cross_attribute}
+\noindent \begin{tabular}[t]{| p{1in} | p{1.75in} | p{1in} | p{1in} | p{1.25in} |}
+\hline
+\textbf{Bias Pattern} & \textbf{Attribute} & \textbf{Direction} & \textbf{Strength}  \\ \hline
+Location & User-reported geographic location. & 3481 & 3481  \\ \hline
+Protected & If true, only approved followers may see the user's tweets & 2 & 2  \\ \hline
+Followers Count & Number of users who track this user's tweets & 2116 & 2116 \\ \hline
+Friends Count & Number of users this user follows & 2116 & 2116 \\ \hline
+Account age & Difference between account creation date and current date & 169 & 169  \\ \hline
+\end{tabular}
+
+\begin{comment}
+\section{Dataset Profile}
+\input{dataset-profile}
+\end{comment}
+
+
+
+\end{document}

@@ -1,0 +1,20 @@
+Twitter is a microblogging and social networking servive that allows its users to send short, one-to-many messages called \textit{tweets}.  Like many online social networks, users can opt-in to viewing other users' messages \textit{following} them, creating a customized content stream.  The act of following is an implicit endorsement of another user on the network.  It can be inferred that the user being followed is of interest to another user on the network.  These interactions constitute a networked system through which users connect and message propagate.\\\\
+
+In order to gain a better understanding of Twitter, it is necessary to investigate the nature of this network.  This information can be used when considering design decisions or allocating resources within Twitter or other future social networks.  While Twitter is innovative in the manner in which it distributes messages, a great deal of this profiling must take place at the user-level network.\\\\
+
+Twitter, like many other online social networks, present a novel opportunity to study interactions between people.  Through them, it becomes possible to easily quantify the activities of millions.  The simple and open structure of the Twitter network is particularly well-suited for this purpose.  As each user account is associated with a variety of attributes, there a variety of methods to approach this task.  The work we present here establishes a framework for further analysis.\\
+
+There are many commonly held intuitions regarding influence that can be proved, disproved or measured through analysis of Twitter.  For example, it is a commonly held belief that activity in states such as California and New York is of a higher culturally relevance than the activity in other states.  As each user account is associated with a location field, it is possible to use the Twitter network to measure the influence of these allegedly trend-setting states.  Other, subtler biases can also be identified and evalued in the same manner.\\
+
+A defining aspect of Twitter that lends itself to research is that all activity defaults to public.  Each user's messages are visible unless they explicitly change their privacy setting.  Although tweets can be protected, all other information associated with an account visible to all.  Using this publicly available connectivity information, it is possible to make broad assessments of connectivity within the Twitter community.\\
+
+Given the massive size and continued growth of Twitter, capturing a complete snapshot of the network is an increasingly unrealistic endeavor.  To make matters worse, Twitter imposes prohibitive rate limitations on access to many of its network measurement resources.  It is therefore necessary to obtain a representative and meaningful sampling of the network before analysis begins.\\
+
+One possible option is to take a random sample of a small percentage of Twitter accounts and activity.  Inspection of this random sample's attributes would lead to a representative view, but not necessarily a meaningful one.  The users of greatest interest are small in number and some of their attributes will have extreme values.  A random sample is not likely to capture these users' impact on the network.\\
+
+
+
+/textit{OLD STUFF}
+Following actions can be aggregated to make an assessment of the influence level of a given user.  This central concept in Twitter's network, as evidenced by the prominently displayed ``Follower'' and Following`` counts on each users' home page.
+
+Our project will investigate the relationship between Twitter connectivity and various user attributes, including geographic location.  To do this, we have acquired a subset of the Twitter user base that is highly connected.  We plan to observe the intra- and inter- propagation of data for these various attributes within our subgraphs.
