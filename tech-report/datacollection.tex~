@@ -48,17 +48,18 @@ Simultaneously, we needed to collect the user attribute information for the tens
 
 \subsection{Measuring Error}
 
-Because our user attribute information was collected in less than a month, we have assumed that no significant error is present.  It is not possible to capture a realtime snapshot of user attributes in the Twitter network, so we have no method of comparing collected attributes to actual attributes.  Our intuition here is that most user attributes are not subject to frequent change.  The exception to this is friend and follower count, which is explored below.  For our purposes, the collected user attribute information can be accepted as accurate.
+Because our user attribute information was collected in less than a month, we have assumed that no significant error is present.  It is not possible to capture a realtime snapshot of user attributes in the Twitter network, so we have no method of comparing collected attributes to actual attributes.  Our intuition here is that most user attributes are not subject to frequent change.  The exception to this is connectivity, which is explored below.  For our purposes, the collected user attribute information can be accepted as accurate.
 
-In contrast, connectivity information for our subgraph was collected in two different phases between September 2010 and February 2011.  It would be foolish to assume that significant change did not occur in the network over this time.  It was therefore necessary to confirm that the temporally disparate collection phases did not introduce error to our network measurements.  To do this, we compared our snapshot of connectivity for each user to the stated friend and follower counts in each user's attributes.
+In contrast, connectivity information for our subgraph was collected in two different phases between September 2010 and February 2011.  It would be foolish to assume that significant change did not occur in the network over this time.  It was therefore necessary to confirm that the temporally disparate collection phases did not introduce error to our network measurements.  To do this, we compared our snapshot of connectivity for each user to the stated connectivity in each user's attributes.
 
-GRAPHIC for FOLLOWERS: The CDF I am working on that shows the error percentage for our core users between actual degree and measured degree.
+\begin{figure}
+ \centering
+ \includegraphics[bb=0 0 640 480,scale=.3]{./images/Bates-Final/CDF.png}
+ % CDF.png: 640x480 pixel, 72dpi, 22.58x16.93 cm, bb=0 0 640 480
+ \label{fig:cdf}
+\end{figure}
 
-GRAPHIC for FRIENDS: The CDF I am working on that shows the error percentage for our core users between actual degree and measured degree.
-
-Figures \ref{fo-cdr} and \ref{fr-cdr} confirm that we have captured an accurate view of connectivity in our piece of the Twitter network.  90\% of users blah blah blah.  This speaks to the general stability of the social network that Twitter facilitates.
-
-(Q: Plotting the growth of this subgraph -- would this be a neat consideration for future work?  Not that we need to do it, but we can always suggest it in the paper for the benefit of Team Reza)
+Figures \ref{cdf} confirms that we have captured an accurate view of connectivity in our piece of the Twitter network.  90\% of users have a follower count error of less than 15\%.  Most users that exhibit a non-negligible error percentage are of a very low degree, and are therefore not of high significance in our subgraph.  High degree users exhibited the lowest error rate because their connectivity information was collected most recently.  This holds true for friend count as well.
 
 \subsection{Profiling}
 
@@ -125,7 +126,7 @@ The location attribute field has no enforced format, apart from length.  That is
 \end{figure*}
 
 \begin{figure*}[t]
- \centerin
+ \centering
  \includegraphics[bb=0 0 1027 377, scale=.4]{./images/Bates-Final/friendscount.png}
  % friendscount.png: 1369x502 pixel, 96dpi, 36.23x13.28 cm, bb=0 0 1027 377
  \label{fig:friend_count}

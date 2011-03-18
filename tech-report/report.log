@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.14)  18 MAR 2011 04:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.14)  18 MAR 2011 05:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -463,48 +463,50 @@ Underfull \vbox (badness 1354) has occurred while \output is active []
  [2 <./images/lang-core.png (PNG copy)> <./images/lang-rand.png (PNG copy)> <./
 images/loca-conn.png (PNG copy)> <./images/loca-rand.png (PNG copy)> <./images/
 loca-actu.png (PNG copy)>]
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 57.
+
+<./images/Bates-Final/CDF.png, id=16, 642.4pt x 481.8pt>
+File: ./images/Bates-Final/CDF.png Graphic file (type png)
+
+<use ./images/Bates-Final/CDF.png>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 62.
 
 
-LaTeX Warning: Reference `fo-cdr' on page 3 undefined on input line 59.
-
-
-LaTeX Warning: Reference `fr-cdr' on page 3 undefined on input line 59.
+LaTeX Warning: Reference `cdf' on page 3 undefined on input line 62.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 74.
+(Font)              <7> on input line 75.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 92--93
+Underfull \hbox (badness 1648) in paragraph at lines 93--94
 []\T1/ptm/m/n/10 Users have seven choices for the lan-guage at-tribute.
  []
 
-
-Underfull \vbox (badness 1383) has occurred while \output is active []
-
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+[3 <./images/Bates-Final/CDF.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 121.
+(pdftex.def)                using `viewport' instead on input line 122.
 
-<./images/Bates-Final/followercount.png, id=19, 1028.34187pt x 365.11406pt>
+<./images/Bates-Final/followercount.png, id=21, 1028.34187pt x 365.11406pt>
 File: ./images/Bates-Final/followercount.png Graphic file (type png)
 
 <use ./images/Bates-Final/followercount.png>
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 129.
+(pdftex.def)                using `viewport' instead on input line 130.
 
-<./images/Bates-Final/friendscount.png, id=20, 1030.60031pt x 377.91188pt>
+<./images/Bates-Final/friendscount.png, id=22, 1030.60031pt x 377.91188pt>
 File: ./images/Bates-Final/friendscount.png Graphic file (type png)
 
 <use ./images/Bates-Final/friendscount.png>) (./methodology.tex [4]
@@ -512,7 +514,7 @@ File: ./images/Bates-Final/friendscount.png Graphic file (type png)
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 33.
 
-<./images/Bates-Final/statusescount.png, id=29, 1044.15094pt x 379.4175pt>
+<./images/Bates-Final/statusescount.png, id=28, 1044.15094pt x 379.4175pt>
 File: ./images/Bates-Final/statusescount.png Graphic file (type png)
 
 <use ./images/Bates-Final/statusescount.png>
@@ -520,26 +522,23 @@ File: ./images/Bates-Final/statusescount.png Graphic file (type png)
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 41.
 
-<./images/utc_offset.png, id=30, 843.15pt x 316.18124pt>
+<./images/utc_offset.png, id=29, 843.15pt x 316.18124pt>
 File: ./images/utc_offset.png Graphic file (type png)
 
-<use ./images/utc_offset.png>) (./analysis.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./images/Bates-Final/followercount.png (PNG copy)> <./images/Bates-Final/f
-riendscount.png (PNG copy)>]
+<use ./images/utc_offset.png>) (./analysis.tex [5 <./images/Bates-Final/followe
+rcount.png (PNG copy)> <./images/Bates-Final/friendscount.png (PNG copy)>]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 7.
 
-<./images/Bates-Final/listedcount.png, id=34, 1029.8475pt x 381.67593pt>
+<./images/Bates-Final/listedcount.png, id=36, 1029.8475pt x 381.67593pt>
 File: ./images/Bates-Final/listedcount.png Graphic file (type png)
 
 <use ./images/Bates-Final/listedcount.png>
-Underfull \vbox (badness 1132) has occurred while \output is active []
+Underfull \vbox (badness 3815) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3815) has occurred while \output is active []
 
  [6 <./images/Bates-Final/statusescount.png (PNG copy)> <./images/utc_offset.pn
 g (PNG copy)>]
@@ -547,7 +546,7 @@ g (PNG copy)>]
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 28.
 
-<./images/Bates-Final/lang.png, id=38, 425.33907pt x 194.97844pt>
+<./images/Bates-Final/lang.png, id=40, 425.33907pt x 194.97844pt>
 File: ./images/Bates-Final/lang.png Graphic file (type png)
 
 <use ./images/Bates-Final/lang.png>
@@ -555,7 +554,7 @@ File: ./images/Bates-Final/lang.png Graphic file (type png)
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 36.
 
-<./images/protected.png, id=39, 188.20313pt x 85.82062pt>
+<./images/protected.png, id=41, 188.20313pt x 85.82062pt>
 File: ./images/protected.png Graphic file (type png)
 
 <use ./images/protected.png>
@@ -563,7 +562,7 @@ File: ./images/protected.png Graphic file (type png)
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 44.
 
-<./images/geoenabled.png, id=40, 214.55156pt x 80.55093pt>
+<./images/geoenabled.png, id=42, 214.55156pt x 80.55093pt>
 File: ./images/geoenabled.png Graphic file (type png)
 
 <use ./images/geoenabled.png>
@@ -575,9 +574,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--61
 Overfull \hbox (147.784pt too wide) in paragraph at lines 54--63
 [] 
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
@@ -667,10 +663,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2042 strings out of 493848
- 25055 string characters out of 1152823
- 81519 words of memory out of 3000000
- 5225 multiletter control sequences out of 15000+50000
+ 2047 strings out of 493848
+ 25191 string characters out of 1152823
+ 82530 words of memory out of 3000000
+ 5229 multiletter control sequences out of 15000+50000
  61740 words of font info for 119 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  32i,8n,24p,1016b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -682,9 +678,9 @@ cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-tex
 live/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on report.pdf (9 pages, 879834 bytes).
+Output written on report.pdf (9 pages, 885699 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
