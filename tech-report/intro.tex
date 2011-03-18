@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-Twitter is a microblogging and social networking service that allows its users to send short, one-to-many messages called \textit{tweets}.  Like many online social networks, users can opt-in to viewing other users' messages by \textit{following} them, creating a customized content stream.  The act of following is an implicit endorsement of another user on the network.  It can be inferred that the user being followed is of interest to another user on the network.  These interactions constitute a networked system through which users connect and messages propagate.
+Twitter is a microblogging and social networking servive that allows its users to send short, one-to-many messages called \textit{tweets}.  Like many online social networks, users can opt-in to viewing other users' messages by \textit{following} them, creating a customized content stream.  The act of following is an implicit endorsement of another user on the network.  It can be inferred that the user being followed is of interest to another user on the network.  These interactions constitute a networked system through which users connect and messages propagate.
 
 In order to gain a better understanding of Twitter, it is necessary to investigate the nature of this network.  This information can be used when considering design decisions or allocating resources within Twitter or other future social networks.  While Twitter's innovativion lies in the manner in which it distributes messages, a great deal of this profiling must take place at the user-level network.
 
@@ -20,50 +19,3 @@ Our approach finds a healthy compromise between these competing priorities by st
 Analysis of our results shows a number of influence patterns across various attributes in our Twitter subgraph.  These influence patterns take the form of bias measured between different groupings of users following one another.  We explain these patterns in detail and discuss how these attribute relationships may speak to the general use of Twitter.
 
 The rest of this paper is organized as follows.  We outline our data collection process in section \ref{sec:datacollection}.  In section \ref{sec:methodology}, we present our method for evaluating connectivity bias within the Twitter network.  Analysis of our results is contained in section \ref{sec:analysis}.  We review some of the related work in section \ref{sec:relatedwork}.  Section \ref{sec:conclusion} concludes the paper.
-=======
-Twitter is a microblogging and social networking service that allows its users to send short, one-to-many messages called \textit{tweets}.  Like many online social 
-networks, users can opt-in to viewing other users' messages by \textit{following} them, creating a customized content stream.  The act of following is an implicit 
-endorsement of another user on the network.  It can be inferred that the user being followed is of interest to another user on the network.  These interactions 
-constitute a networked system through which users connect and messages propagate.
-
-In order to gain a better understanding of Twitter, it is necessary to investigate the nature of this network.  This information can be used when considering design 
-decisions or allocating resources within Twitter or other future social networks.  While Twitter's innovation lies in the manner in which it distributes messages, a 
-great deal of this profiling must take place at the user-level network.
-
-Twitter, like many other online social networks, provides a novel opportunity to study interactions between people.  Through them, it becomes possible to easily aggregate 
-the activities of millions.  The simple and open structure of the Twitter network is particularly well-suited for this purpose.  As each user account is associated with 
-a variety of attributes, there a variety of methods to approach this task.  The work we present here establishes a framework for further analysis.
-
-There are many commonly held intuitions regarding influence that can be proved, disproved or quantified through analysis of Twitter.  For example, it is a commonly held 
-belief that activity in states such as California and New York is of a higher culturally relevance than the activity in other states.  As each user account is associated 
-with a location field, it is possible to use the Twitter network to measure the influence of these allegedly trend-setting states.  Other, subtler biases can also be 
-identified and evaluated in the same manner.
-
-A defining aspect of Twitter that lends itself to research is that all activity defaults to public.  Each user's messages are visible unless they explicitly change their 
-privacy setting.  Although tweets can be protected, all other information associated with an account is visible to all.  Using this publicly available connectivity 
-information, it is possible to make broad assessments of connectivity within the Twitter community.
-
-Given the massive size and continued growth of Twitter, capturing a complete snapshot of the network is an increasingly unrealistic endeavor.  To make matters worse, 
-Twitter imposes prohibitive rate limitations on access to many of its network measurement resources.  It is therefore necessary to obtain a representative and meaningful 
-sampling of the network before analysis can begin.
-
-One possible option is to take a random sample of a small percentage of Twitter accounts and activity.  Inspection of this random sample's attributes would lead to a 
-representative view, but not necessarily a meaningful one.  The users of greatest interest are small in number and some of their attributes will have extreme values.  A 
-random sample is not likely to capture these users' impact on the network.
-
-It is also possible to conduct a biased sampling.  Here, interesting users with extreme user attribute values are specifically targeted for measurement.  If good 
-metrics are used to assess influence, this will ensure that important user accounts are not crowded out by unimportant ones.  Of course, this leads to data that is less 
-representative than a random sampling.  There is a natural trade-off between these two goals.
-
-Our approach finds a healthy compromise between these competing priorities by starting with a biased sample and then performing a multi-hop crawl across a small piece of 
-the network to conduct further sampling.  This crawl creates a snapshot of a part of Twitter that is acceptably representative while simultaneously ensuring that rare 
-users are acceptably prominent.  We establish that our snapshot is sufficiently representative by comparing its profile to the profile of a true random sample.
-
-Analysis of our results shows a number of influence patterns across various attributes in our Twitter subgraph.  These influence patterns take the form of bias measured 
-between different groupings of users following one another.  We explain these patterns in detail and discuss how these attribute relationships may speak to the general 
-use of Twitter.
-
-The rest of this paper is organized as follows.  We outline our data collection process in section \ref{sec:datacollection}.  In section \ref{sec:methodology}, we 
-present our method for evaluating connectivity bias within the Twitter network.  Analysis of our results is contained in section \ref{sec:analysis}.  We review some of 
-the related work in section \ref{sec:relatedwork}.  Section \ref{sec:conclusion} concludes the paper.
->>>>>>> d23f3032c30447f22eec10bffc7f6a1f506d4099
