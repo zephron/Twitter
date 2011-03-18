@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.14)  18 MAR 2011 05:47
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.14)  18 MAR 2011 05:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,19 +718,13 @@ Underfull \hbox (badness 2376) in paragraph at lines 21--21
 []\T1/ptm/m/n/10 Show All In-line
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-[]\T1/ptm/m/n/10 Difference be-tween ac-count
- []
+) (./cross-attribute.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [10
 
-Overfull \hbox (48.34807pt too wide) in paragraph at lines 81--92
-[]\T1/ptm/m/n/10 Bias Com-par-isons Across At-tributes [][] 
- []
-
-[10
-
-] (./report.aux)
+]
+[11] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -739,9 +733,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2117 strings out of 493848
- 26440 string characters out of 1152823
- 81731 words of memory out of 3000000
+ 2120 strings out of 493848
+ 26495 string characters out of 1152823
+ 103731 words of memory out of 3000000
  5289 multiletter control sequences out of 15000+50000
  61740 words of font info for 119 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -754,9 +748,9 @@ cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-tex
 live/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on report.pdf (10 pages, 1234311 bytes).
+Output written on report.pdf (11 pages, 1236626 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 117 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,10 @@
+Below are the user attributes we plan to examine in our analyses. In reference to number of baskets, \textit{varied} means we will experiment with different numbers of baskets.\\
+
+\noindent \begin{tabular}[t]{| p{1in} | p{1.75in} | p{1in} | p{1in} | p{1.25in} |}
+\hline
+\textbf{Attribute} & \textbf{Description} & \textbf{\# of Baskets (Core)} & \textbf{\# of Baskets (All)} & \textbf{Values}  \\ \hline
+Location & User-reported geographic location. & 3481 & 3481 & U.S. state code \\ \hline
+Protected & If true, only approved followers may see the user's tweets & 2 & 2 & true, false \\ \hline
+Followers Count & Number of users who track this user's tweets & 2116 & 2116 & integer \\ \hline
+%Status Source & Where the most recent status was tweeted from & 5,144 & 39,566 & (none), web, various URLs \\ \hline  
+\end{tabular}

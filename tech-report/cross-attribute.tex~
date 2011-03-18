@@ -1,0 +1,35 @@
+
+\noindent \begin{tabular}[t]{| p{1.5in} | p{1.25in} | p{1in} | p{1in} | p{1.25in} |}
+\hline
+\textbf{Bias Pattern} & \textbf{Attribute} & \textbf{Direction} & \textbf{Strength} & \textbf{Comments}  \\ \hline
+Group follows Itself & Followers Count & Positive & Weak &  \\ \hline
+                     & Friends Count & Positive & Weak &  \\ \hline
+                     & Statuses Count & Positive & Weak &  \\ \hline
+                     & UTC Offset Count & Positive & Weak &  \\ \hline
+                     & Listed Count & Positive & Weak &  \\ \hline
+                     & System Age & Positive & Weak &  \\ \hline
+                     & Language  & Positive & Weak &  \\ \hline
+                     & State & Positive & Weak &  \\ \hline
+                     & Protected & Positive & Weak &  \\ \hline
+                     & Geo-Enabled & Positive & Weak &  \\ \hline
+Group follows Others & Followers Count & Positive & Weak &  \\ \hline
+                     & Friends Count & Positive & Weak &  \\ \hline
+                     & Statuses Count & Positive & Weak &  \\ \hline
+                     & UTC Offset Count & Positive & Weak &  \\ \hline
+                     & Listed Count & Positive & Weak &  \\ \hline
+                     & System Age & Positive & Weak &  \\ \hline
+                     & Language  & Positive & Weak &  \\ \hline
+                     & State & Positive & Weak &  \\ \hline
+                     & Protected & Positive & Weak &  \\ \hline
+                     & Geo-Enabled & Positive & Weak &  \\ \hline
+Low Deg. follows Low Deg. & Followers Count & Positive & Weak &  \\ \hline
+                     & Friends Count & Positive & Weak &  \\ \hline
+                     & Statuses Count & Positive & Weak &  \\ \hline
+                     & Listed Count & Positive & Weak &  \\ \hline
+                     & System Age & Positive & Weak &  \\ \hline
+High Deg. follows High Deg. & Followers Count & Positive & Weak &  \\ \hline
+                     & Friends Count & Positive & Weak &  \\ \hline
+                     & Statuses Count & Positive & Weak &  \\ \hline
+                     & Listed Count & Positive & Weak &  \\ \hline
+                     & System Age & Positive & Weak &  \\ \hline
+\end{tabular}
