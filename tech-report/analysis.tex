@@ -130,22 +130,6 @@ Figures \ref{fig:state-ca}-\ref{fig:state-nc} show connectivity bias for the top
 
 \subsection{Comparing Bias Across Different Attributes}
 \label{sub:crossattribute}
-CROSS ATTRIBUTE YEAAAAHHHHH!!!
+While analyizing each attribute, we indentified several recurring bias patterns through which the attributes can be compared.  Each attribute can be described by its behavior across these bias patterns.  Across all attributes, we observed \textit{group follows itself} and \textit{group follows others} patterns.  There are additional patterns for attributes of continuous range -- \textit{low degree follows low degree}, \textit{high degree follows high degree}, \textit{low degree follows high degree}, and \textit{high degree follows low degree}.
 
-\noindent \begin{tabular}[t]{| p{1in} | p{1.75in} | p{1in} | p{1in} | p{1.25in} |}
-\hline
-\textbf{Bias Pattern} & \textbf{Attribute} & \textbf{Direction} & \textbf{Strength}  \\ \hline
-Location & User-reported geographic location. & 3481 & 3481  \\ \hline
-Protected & If true, only approved followers may see the user's tweets & 2 & 2  \\ \hline
-Followers Count & Number of users who track this user's tweets & 2116 & 2116 \\ \hline
-Friends Count & Number of users this user follows & 2116 & 2116 \\ \hline
-Account age & Difference between account creation date and current date & 169 & 169  \\ \hline
-\end{tabular}
-
-
-\subsection{Observations}
-Conclude that across these attributes there are several identifiable patterns -- similar users follow eachother, dissimilar users follow eachother, low degree users follow high degree users, extreme low degree users deviate from general usage, extreme high degree users deviate from general usage.  Identify which attributes belong to which patterns.\\
-
-Figures \ref{fig:follower_count}, \ref{fig:friend_count} and \ref{fig:status_count} likely speak to two distinct purposes for which Twitter is used.
-
-The bias for the protected and geoenabled attributes likely share a common bond.  The enabling of these options likely indicates that a user wishes to use Twitter amongst a small group of known friends.  High profile, influential public users will not generally have these options enabled.  Since our premise is that there is a bias in the Twitter network towards following influential users, it stands to reason that there is a negative bias in a relationship between two groupings that does not contain these rare users.
+We have characterized the strength of each of these bias patterns across all attributes.  For the sake of brevity, these have been summarized as a table in appendix \label{app:table_cross_attribute}.  Rather than mathematically define each bias pattern, we have decided to keep our identifications loose and use our visualizations as a guide.  The transition 'low degree' and 'high degree' is clear in the visual aids; the included table serves only as guide to compare the relative strengths of patterns in different attributes.
