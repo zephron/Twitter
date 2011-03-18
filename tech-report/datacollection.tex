@@ -118,20 +118,19 @@ The location attribute field has no enforced format, apart from length.  That is
 
 \begin{figure*}[t]
  \centering
- \includegraphics[bb=0 0 664 222,scale=.62]{./images/followers_count.png}
- % followers_count.png: 885x296 pixel, 96dpi, 23.42x7.83 cm, bb=0 0 664 222
+ \includegraphics[bb=0 0 1025 364, scale=.4]{./images/Bates-Final/followercount.png}
+ % followercount.png: 1366x485 pixel, 96dpi, 36.15x12.83 cm, bb=0 0 1025 364
  \label{fig:follower_count}
  \caption{A connectivity bias chart for number of followers in logarithmically increasing groupings.}
 \end{figure*}
 
 \begin{figure*}[t]
  \centering
- \includegraphics[bb=0 0 746 221,scale=.55]{./images/friends_count.png}
- % friends_count.png: 995x294 pixel, 96dpi, 26.33x7.78 cm, bb=0 0 746 221
+ \includegraphics[bb=0 0 1027 377, scale=.4]{./images/Bates-Final/friendscount.png}
+ % friendscount.png: 1369x502 pixel, 96dpi, 36.23x13.28 cm, bb=0 0 1027 377
  \label{fig:friend_count}
  \caption{A connectivity bias chart for number of friends in logarithmically increasing groupings.}
 \end{figure*}
-
 
 Given that there are hundreds of thousands of cities in the world, we decided to start our location analyses with U.S. states because of their familiarity to the authors.  Our approach is to filter users based on exact matches with a pre-compiled list of U.S. cities in the standard \textit{San Francisco, CA} or \textit{San Francisco, California} format.  If a user matches one of these locations exactly, the user cannot exactly match a different location.  For the top 100 most populous cities, we try to match the city name itself, without the state, with the intuition that, for example, users from \textit{San Francisco} would not find it necessary to specify their state.
 

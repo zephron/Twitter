@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.3.14)  18 MAR 2011 02:51
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.14)  18 MAR 2011 04:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -89,10 +89,11 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/etc/texmf/tex/latex/config/graphics.cfg
 File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count86
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
@@ -355,10 +356,10 @@ Package subfigure Warning: Your document class has a bad definition
 \subfigbottomskip=\skip44
 \subfigcapmargin=\dimen108
 \subfiglabelskip=\skip45
-\c@subfigure=\count86
-\c@lofdepth=\count87
-\c@subtable=\count88
-\c@lotdepth=\count89
+\c@subfigure=\count87
+\c@lofdepth=\count88
+\c@subtable=\count89
+\c@lotdepth=\count90
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
@@ -389,6 +390,19 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 26.
 (/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
+(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count91
+\scratchdimen=\dimen109
+\scratchbox=\box26
+\nofMPsegments=\count92
+\nofMParguments=\count93
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count94
+\MPscratchDim=\dimen110
+\MPnumerator=\count95
+\everyMPtoPDFconversion=\toks18
+)
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
@@ -399,25 +413,56 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 41.
- (./intro.tex [1
+ (./intro.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ])
 (./datacollection.tex
-File: ./images/lang-core.png Graphic file (type eps)
- <./images/lang-core.png>
-File: ./images/lang-rand.png Graphic file (type eps)
- <./images/lang-rand.png>
-File: ./images/loca-conn.png Graphic file (type eps)
 
-<./images/loca-conn.png>
-File: ./images/loca-rand.png Graphic file (type eps)
- <./images/loca-rand.png>
-File: ./images/loca-actu.png Graphic file (type eps)
- <./images/loca-actu.png>
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 3.
+
+<./images/lang-core.png, id=8, 803.0pt x 501.875pt>
+File: ./images/lang-core.png Graphic file (type png)
+
+<use ./images/lang-core.png>
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 11.
+
+<./images/lang-rand.png, id=9, 803.0pt x 501.875pt>
+File: ./images/lang-rand.png Graphic file (type png)
+
+<use ./images/lang-rand.png>
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 19.
+
+<./images/loca-conn.png, id=10, 803.0pt x 501.875pt>
+File: ./images/loca-conn.png Graphic file (type png)
+
+<use ./images/loca-conn.png>
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 27.
+
+<./images/loca-rand.png, id=11, 803.0pt x 501.875pt>
+File: ./images/loca-rand.png Graphic file (type png)
+
+<use ./images/loca-rand.png>
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 35.
+
+<./images/loca-actu.png, id=12, 803.0pt x 501.875pt>
+File: ./images/loca-actu.png Graphic file (type png)
+
+<use ./images/loca-actu.png>
 Underfull \vbox (badness 1354) has occurred while \output is active []
 
- [2]
+ [2 <./images/lang-core.png (PNG copy)> <./images/lang-rand.png (PNG copy)> <./
+images/loca-conn.png (PNG copy)> <./images/loca-rand.png (PNG copy)> <./images/
+loca-actu.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
 
@@ -447,43 +492,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-File: ./images/followers_count.png Graphic file (type eps)
-<./images/followers_count.png>
-File: ./images/friends_count.png Graphic file (type eps)
- <./images/friends_count.png>) (./methodology.tex
-File: ./images/statuses_count.png Graphic file (type eps)
-<./images/statuses_count.png>
-File: ./images/utc_offset.png Graphic file (type eps)
- <./images/utc_offset.png> [4]) (./analysis.tex
-File: ./images/listed_count.png Graphic file (type eps)
 
-<./images/listed_count.png>
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 121.
+
+<./images/Bates-Final/followercount.png, id=19, 1028.34187pt x 365.11406pt>
+File: ./images/Bates-Final/followercount.png Graphic file (type png)
+
+<use ./images/Bates-Final/followercount.png>
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 129.
+
+<./images/Bates-Final/friendscount.png, id=20, 1030.60031pt x 377.91188pt>
+File: ./images/Bates-Final/friendscount.png Graphic file (type png)
+
+<use ./images/Bates-Final/friendscount.png>) (./methodology.tex [4]
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 33.
+
+<./images/Bates-Final/statusescount.png, id=29, 1044.15094pt x 379.4175pt>
+File: ./images/Bates-Final/statusescount.png Graphic file (type png)
+
+<use ./images/Bates-Final/statusescount.png>
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 41.
+
+<./images/utc_offset.png, id=30, 843.15pt x 316.18124pt>
+File: ./images/utc_offset.png Graphic file (type png)
+
+<use ./images/utc_offset.png>) (./analysis.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
-Underfull \vbox (badness 2285) has occurred while \output is active []
+ [5 <./images/Bates-Final/followercount.png (PNG copy)> <./images/Bates-Final/f
+riendscount.png (PNG copy)>]
 
- [6]
-File: ./images/protected.png Graphic file (type eps)
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 7.
 
-<./images/protected.png>
-File: ./images/geoenabled.png Graphic file (type eps)
- <./images/geoenabled.png>
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+<./images/Bates-Final/listedcount.png, id=34, 1029.8475pt x 381.67593pt>
+File: ./images/Bates-Final/listedcount.png Graphic file (type png)
+
+<use ./images/Bates-Final/listedcount.png>
+Underfull \vbox (badness 1132) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./images/Bates-Final/statusescount.png (PNG copy)> <./images/utc_offset.pn
+g (PNG copy)>]
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 28.
+
+<./images/Bates-Final/lang.png, id=38, 425.33907pt x 194.97844pt>
+File: ./images/Bates-Final/lang.png Graphic file (type png)
+
+<use ./images/Bates-Final/lang.png>
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 36.
+
+<./images/protected.png, id=39, 188.20313pt x 85.82062pt>
+File: ./images/protected.png Graphic file (type png)
+
+<use ./images/protected.png>
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 44.
+
+<./images/geoenabled.png, id=40, 214.55156pt x 80.55093pt>
+File: ./images/geoenabled.png Graphic file (type png)
+
+<use ./images/geoenabled.png>
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
 []\T1/ptm/m/n/10 Difference be-tween ac-count
  []
 
 
-Overfull \hbox (147.784pt too wide) in paragraph at lines 46--55
+Overfull \hbox (147.784pt too wide) in paragraph at lines 54--63
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-) (./related-work.tex) [7] (./conclusion.tex) (./report.bbl
+) (./related-work.tex)
+Underfull \vbox (badness 7064) has occurred while \output is active []
+
+ [7 <./images/Bates-Final/listedcount.png (PNG copy)> <./images/Bates-Final/lan
+g.png (PNG copy)> <./images/protected.png (PNG copy)> <./images/geoenabled.png 
+(PNG copy)>] (./conclusion.tex) (./report.bbl
 Underfull \hbox (badness 10000) detected at line 3
 \T1/ptm/m/n/8 [1]
  []
@@ -561,12 +667,24 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1622 strings out of 493849
- 18670 string characters out of 1152846
- 76367 words of memory out of 3000000
- 4824 multiletter control sequences out of 15000+50000
- 50699 words of font info for 109 fonts, out of 3000000 for 9000
+ 2042 strings out of 493848
+ 25055 string characters out of 1152823
+ 81519 words of memory out of 3000000
+ 5225 multiletter control sequences out of 15000+50000
+ 61740 words of font info for 119 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 32i,8n,24p,1016b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,8n,24p,1016b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-tex
+live/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on report.pdf (9 pages, 879834 bytes).
+PDF statistics:
+ 78 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on report.dvi (9 pages, 55796 bytes).

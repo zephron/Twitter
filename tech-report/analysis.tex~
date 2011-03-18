@@ -1,15 +1,14 @@
-\begin{figure*}[t]
- \centering
- \includegraphics[bb=0 0 496 163,scale=.6]{./images/listed_count.png}
- % listed_count.png: 661x217 pixel, 96dpi, 17.49x5.74 cm, bb=0 0 496 163
- \label{fig:listed_count}
- \caption{A connectivity bias chart for number of lists a user appears on in logarithmically increasing groupings.}
-\end{figure*}
-
-
 Our results are visualized for each attribute in figures throughout this paper.  These figures can be interpretted as follows: the groupings that are orderd by row are following the groupings that are ordered by column.  To read the bias for a particular relationship in these charts, find the desired row grouping and move right across the page.  Negative bias relationships are shaded red, and indicate that a row group has a bias against following a particular column group.  Positive bias relationships are shaded green, and indicate that a row group is biased in favor of following a particular column group.  The shade color increases with the strength of the bias.  Relationships that were not contained in our dataset are represented by gray-shaded empty squares.  For the sake of readability, the strength of shading is adjusted across different figures.  The strength of observed biases across different attributes is evaluated in \ref{sub:crossattribute}
 
 Figure \ref{fig:follower_count}, a visualization of bias across follower count groupings, reveals a number of interesting facets of our Twitter subgraph.  One important feature is the values on the diagonal line moving from the top left to botthom right corner of the graph.  This line marks a group's affinity towards following itself, and will be referred to often in this section.  Here, we observe that our groupings are either neutral or subtly positively biased in favor of following their own group.  The strength of this bias increases with the number of followers.  The only exception to this trend is at the lowest follower count level, where our group is biased against following itself.  Across our results for the quantitative attributes it can be observed that users of extremely low degree exhibit unique behavior.
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[bb=0 0 1026 380, scale=.3]{./images/Bates-Final/listedcount.png}
+ % listedcount.png: 1368x507 pixel, 96dpi, 36.20x13.42 cm, bb=0 0 1026 380
+ \label{fig:listed_count}
+ \caption{A connectivity bias chart for number of lists a user appears on in logarithmically increasing groupings.}
+\end{figure*}
 
 Moving away from the downward diagonal in either direction, it can be seen that groups become increasingly biased against following one another.  It looks as though this trend begins to dissipate once the degree of the incoming connection increases to above 50,000.  Unfortunately, this is obscured by the absence of a number of relationships that were not contained in our dataset.  The column for 199,999 represents only a single account in our subgraph, which is why the relationship transitions are so distinct.  This column is not being considered.
 
@@ -22,6 +21,14 @@ Figure \ref{fig:utc_offset} displays attribute relationships for users in differ
 Figure \ref{fig:listed_count} displays connectivity bias based on the number of Twitter lists tha a user appears on.  Lists are a way to organize and separate different message streams, and our intuition here was that there would be a bias towards following users that appear more frequently on lists.  As it turns out, this trend is only present when considering users of a low listed count degree.  Groupings of users that appear on over 100 lists display a consistent and considerable bias against following other high degree listed count users.
 
 Figure \ref{fig:protected} displays connectivity bias based on whether or not a user's messages are protected.  The only considerable bias displayed in this chart is that users with protected accounts are biased against following one another.  Figure \ref{fig:geoenabled} displays significant positive bias for all relationships featuring non-geoenabled user groupings as well as a negative bias for \textit{Geoenabled follows Geoenabled}.
+
+
+\begin{figure}[t]
+ \centering
+ \includegraphics[bb=0 0 424 194, scale=.5]{./images/Bates-Final/lang.png}
+ % lang.png: 565x259 pixel, 96dpi, 14.95x6.85 cm, bb=0 0 424 194
+ \label{fig:lang}
+\end{figure}
 
 \begin{figure}[t]
  \centering
@@ -43,6 +50,15 @@ Figure \ref{fig:protected} displays connectivity bias based on whether or not a 
 \label{sub:crossattribute}
 CROSS ATTRIBUTE YEAAAAHHHHH!!!
 
+\noindent \begin{tabular}[t]{| p{1in} | p{1.75in} | p{1in} | p{1in} | p{1.25in} |}
+\hline
+\textbf{Bias Pattern} & \textbf{Attribute} & \textbf{Direction} & \textbf{Strength}  \\ \hline
+Location & User-reported geographic location. & 3481 & 3481  \\ \hline
+Protected & If true, only approved followers may see the user's tweets & 2 & 2  \\ \hline
+Followers Count & Number of users who track this user's tweets & 2116 & 2116 \\ \hline
+Friends Count & Number of users this user follows & 2116 & 2116 \\ \hline
+Account age & Difference between account creation date and current date & 169 & 169  \\ \hline
+\end{tabular}
 
 
 \subsection{Observations}

@@ -12,22 +12,6 @@ Paragraph: Mention the simple random survey of records that was performed, the p
 
 After identifying discrete groupings for each attribute it became possible to enumerate all possible attribute relationships within our dataset.  Each edge in our subgraph represents a relationship between two Twitter users, each with a group assignment for each attribute.  We created a unique identifier for all possible relationships for each attribute.  We then processed our dataset by assigning these identifiers and counting their frequency.
 
-\begin{figure*}[t]
- \centering
- \includegraphics[bb=0 0 802 319,scale=.53]{./images/statuses_count.png}
- % statuses_count.png: 1069x425 pixel, 96dpi, 28.29x11.25 cm, bb=0 0 802 319
- \label{fig:status_count}
- \caption{A connectivity bias chart for number of status updates in logarithmically increasing groupings.}
-\end{figure*}
-
-\begin{figure*}[t]
- \centering
- \includegraphics[bb=0 0 840 315,scale=.5]{./images/utc_offset.png}
- % utc_offset.png: 1120x420 pixel, 96dpi, 29.64x11.11 cm, bb=0 0 840 315
- \caption{A connectivity bias chart for Coordinated Universal Time (UTC) offset.}
- \label{fig:utc_offset}
-\end{figure*}
-
 \subsection{Measuring Bias}
 
 Through data processing we obtained a set of values $A_{XY}$, representing the actual count of each possible attribute relationship \textit{X follows Y}.  However, this value alone is insufficient for measuring network bias.  It does not consider the frequency of users of attribute $X$ or $Y$.  It also does not consider the total number of outgoing edges from $X$, $X_{out}$ ,or incoming edges to $Y$, $Y_{in}$.  Before network bias can be determined it is necessary to normalize $A_{XY}$ against the value one would expect in a randomized, bias-free version of the graph.  This value is given by:
@@ -43,3 +27,19 @@ Given $A_{XY}$ and $R_{XY}$, the bias for the relationship \textit{X follows Y} 
 \[B_{XY}=\frac{A_{XY}-R_{XY}}{R_{XY}}\]
 
 A positive $B_{XY}$ indicates that group $X$ is biased towards following group $Y$.  A negative $B_{XY}$ indicates that group $X$ is biased against following group $Y$.  If $[B_{XY}]$ is very nearly zero, no bias is observed.  If $[B_{XY}] > 1$ then the relationship \textit{X follows Y} is biased to the point that it is several times more frequent or infrequent than would be expected in a randomized graph.
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[bb=0 0 1040 378,scale=.5]{./images/Bates-Final/statusescount.png}
+ % statusescount.png: 1387x504 pixel, 96dpi, 36.70x13.34 cm, bb=0 0 1040 378
+ \label{fig:status_count}
+ \caption{A connectivity bias chart for number of status updates in logarithmically increasing groupings.}
+\end{figure*}
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[bb=0 0 840 315,scale=.5]{./images/utc_offset.png}
+ % utc_offset.png: 1120x420 pixel, 96dpi, 29.64x11.11 cm, bb=0 0 840 315
+ \caption{A connectivity bias chart for Coordinated Universal Time (UTC) offset.}
+ \label{fig:utc_offset}
+\end{figure*}
