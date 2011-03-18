@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.2.10)  14 MAR 2011 16:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.3.14)  18 MAR 2011 02:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,13 @@ entering extended mode
 (./report.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
 (./IEEEtran11.cls
 Document Style `IEEEtran' <30-August-1993>.
 Upgraded to `IEEEtran.cls' <10-Jan.-1996> !PN
@@ -398,61 +404,86 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ])
 (./datacollection.tex
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 19.
-
-
-LaTeX Warning: Reference `fo-cdr' on page 2 undefined on input line 19.
-
-
-LaTeX Warning: Reference `fr-cdr' on page 2 undefined on input line 19.
-
-[2]
 File: ./images/lang-core.png Graphic file (type eps)
  <./images/lang-core.png>
 File: ./images/lang-rand.png Graphic file (type eps)
  <./images/lang-rand.png>
-Underfull \hbox (badness 1648) in paragraph at lines 53--54
-[]\T1/ptm/m/n/10 Users have seven choices for the lan-guage at-tribute.
- []
-
 File: ./images/loca-conn.png Graphic file (type eps)
+
 <./images/loca-conn.png>
 File: ./images/loca-rand.png Graphic file (type eps)
  <./images/loca-rand.png>
 File: ./images/loca-actu.png Graphic file (type eps)
  <./images/loca-actu.png>
-File: ./images/followers_count.png Graphic file (type eps)
+Underfull \vbox (badness 1354) has occurred while \output is active []
 
+ [2]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
+
+
+LaTeX Warning: Reference `fo-cdr' on page 3 undefined on input line 59.
+
+
+LaTeX Warning: Reference `fr-cdr' on page 3 undefined on input line 59.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 74.
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 92--93
+[]\T1/ptm/m/n/10 Users have seven choices for the lan-guage at-tribute.
+ []
+
+
+Underfull \vbox (badness 1383) has occurred while \output is active []
+
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+File: ./images/followers_count.png Graphic file (type eps)
 <./images/followers_count.png>
 File: ./images/friends_count.png Graphic file (type eps)
- <./images/friends_count.png> [3])
-(./methodology.tex
+ <./images/friends_count.png>) (./methodology.tex
 File: ./images/statuses_count.png Graphic file (type eps)
- <./images/statuses_count.png>
+<./images/statuses_count.png>
 File: ./images/utc_offset.png Graphic file (type eps)
- <./images/utc_offset.png>
-Underfull \vbox (badness 1072) has occurred while \output is active []
-
- [4]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 33.
-)
-(./analysis.tex
+ <./images/utc_offset.png> [4]) (./analysis.tex
 File: ./images/listed_count.png Graphic file (type eps)
- <./images/listed_count.png> [5]
-Underfull \vbox (badness 2111) has occurred while \output is active []
 
+<./images/listed_count.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 2285) has occurred while \output is active []
+
+ [6]
 File: ./images/protected.png Graphic file (type eps)
 
 <./images/protected.png>
 File: ./images/geoenabled.png Graphic file (type eps)
  <./images/geoenabled.png>
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]\T1/ptm/m/n/10 Difference be-tween ac-count
+ []
+
+
+Overfull \hbox (147.784pt too wide) in paragraph at lines 46--55
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-[6]) (./related-work.tex) (./conclusion.tex) (./report.bbl
+) (./related-work.tex) [7] (./conclusion.tex) (./report.bbl
 Underfull \hbox (badness 10000) detected at line 3
 \T1/ptm/m/n/8 [1]
  []
@@ -472,7 +503,7 @@ Underfull \hbox (badness 10000) detected at line 19
 \T1/ptm/m/n/8 [4]
  []
 
-[7]
+
 Underfull \hbox (badness 10000) detected at line 24
 \T1/ptm/m/n/8 [5]
  []
@@ -497,9 +528,7 @@ Underfull \hbox (badness 10000) detected at line 52
 \T1/ptm/m/n/8 [9]
  []
 
-) [8
-
-] (./user-attributes.tex
+) [8] (./user-attributes.tex
 Underfull \hbox (badness 10000) in paragraph at lines 77--2
 
  []
@@ -510,13 +539,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--5
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
-[]\T1/ptm/m/n/10 (none), city,
- []
-
-
-Underfull \hbox (badness 4391) in paragraph at lines 6--6
-\T1/ptm/m/n/10 state/province, coun-
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]\T1/ptm/m/n/10 Difference be-tween ac-count
  []
 
 
@@ -529,67 +553,7 @@ Underfull \hbox (badness 2376) in paragraph at lines 21--21
 []\T1/ptm/m/n/10 Show All In-line
  []
 
-) (./dataset-profile.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \vbox (badness 6364) has occurred while \output is active []
-
- [9
-
-]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 31.
-
-(/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [10]
-Underfull \hbox (badness 10000) in paragraph at lines 180--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-) [11
+) [9
 
 ] (./report.aux)
 
@@ -597,12 +561,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1649 strings out of 495062
- 19042 string characters out of 1182644
- 73859 words of memory out of 3000000
- 4745 multiletter control sequences out of 15000+50000
- 51021 words of font info for 110 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 32i,8n,24p,963b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 1622 strings out of 493849
+ 18670 string characters out of 1152846
+ 76367 words of memory out of 3000000
+ 4824 multiletter control sequences out of 15000+50000
+ 50699 words of font info for 109 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 32i,8n,24p,1016b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on report.dvi (11 pages, 62464 bytes).
+Output written on report.dvi (9 pages, 55796 bytes).

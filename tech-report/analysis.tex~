@@ -19,7 +19,7 @@ Figure \ref{fig:status_count} displays bias patterns for user groupings by statu
 
 Figure \ref{fig:utc_offset} displays attribute relationships for users in different parts of the world by their offset from coordinated universal time.  While, UTC Offset generally refers to a longitudinal slice of the globe, certain offsets are used exclusively by certain countries or regions.  We observe that the strongest positive bias in this chart is at UTC Offset +5.5 following UTC Offset -8.  These two offsets correspond to user accounts in India and Sri Lanka following user accounts in Pacific Standard Time.  All groupings displayed varying degrees of bias against following user accounts at UTC Offset +9, which corresponds to the time zone in Japan and North and South Korea.  It should be noted that some of relationships displayed in this chart were extremely rare in our subgraph and may not be reliable.
  
-Figure \ref{fig:listed_count} displays connectivity bias based on the number of Twitter lists tha ta user appears on.  Lists are away to organize and separate different message streams, and our intuition here was that there would be a bias towards following users that appear more frequently on lists.  As it turns out, this trend is only present when considering low degree listed count users.  Groupings of users that appear on over 100 lists display a consistent and considerable bias against following other high degree listed count users.
+Figure \ref{fig:listed_count} displays connectivity bias based on the number of Twitter lists tha a user appears on.  Lists are a way to organize and separate different message streams, and our intuition here was that there would be a bias towards following users that appear more frequently on lists.  As it turns out, this trend is only present when considering users of a low listed count degree.  Groupings of users that appear on over 100 lists display a consistent and considerable bias against following other high degree listed count users.
 
 Figure \ref{fig:protected} displays connectivity bias based on whether or not a user's messages are protected.  The only considerable bias displayed in this chart is that users with protected accounts are biased against following one another.  Figure \ref{fig:geoenabled} displays significant positive bias for all relationships featuring non-geoenabled user groupings as well as a negative bias for \textit{Geoenabled follows Geoenabled}.
 
@@ -42,6 +42,8 @@ Figure \ref{fig:protected} displays connectivity bias based on whether or not a 
 \subsection{Comparing Bias Across Different Attributes}
 \label{sub:crossattribute}
 CROSS ATTRIBUTE YEAAAAHHHHH!!!
+
+
 
 \subsection{Observations}
 Conclude that across these attributes there are several identifiable patterns -- similar users follow eachother, dissimilar users follow eachother, low degree users follow high degree users, extreme low degree users deviate from general usage, extreme high degree users deviate from general usage.  Identify which attributes belong to which patterns.\\
