@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.14)  18 MAR 2011 07:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.14)  18 MAR 2011 07:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -409,13 +409,13 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 41.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 41.
+(Font)              <8> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 41.
+(Font)              <6> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 41.
+(Font)              <5> on input line 39.
  (./intro.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -610,36 +610,36 @@ File: ./images/Bates-Final/listedcount.png Graphic file (type png)
 Underfull \vbox (badness 5064) has occurred while \output is active []
 
 
+Underfull \vbox (badness 2134) has occurred while \output is active []
+
+ [7 <./images/oh.pdf> <./images/pa.pdf> <./images/wa.pdf> <./images/nc.pdf>]
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 108.
+(pdftex.def)                using `viewport' instead on input line 112.
 
-<./images/Bates-Final/lang.png, id=66, 425.33907pt x 194.97844pt>
+<./images/Bates-Final/lang.png, id=74, 425.33907pt x 194.97844pt>
 File: ./images/Bates-Final/lang.png Graphic file (type png)
 
 <use ./images/Bates-Final/lang.png>
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 116.
+(pdftex.def)                using `viewport' instead on input line 120.
 
-<./images/protected.png, id=67, 188.20313pt x 85.82062pt>
+<./images/protected.png, id=75, 188.20313pt x 85.82062pt>
 File: ./images/protected.png Graphic file (type png)
 
 <use ./images/protected.png>
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 124.
+(pdftex.def)                using `viewport' instead on input line 128.
 
-<./images/geoenabled.png, id=68, 214.55156pt x 80.55093pt>
+<./images/geoenabled.png, id=76, 214.55156pt x 80.55093pt>
 File: ./images/geoenabled.png Graphic file (type png)
 
-<use ./images/geoenabled.png>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./images/oh.pdf> <./images/pa.pdf> <./images/wa.pdf> <./images/nc.pdf>])
-(./related-work.tex) [8 <./images/Bates-Final/listedcount.png (PNG copy)> <./im
-ages/Bates-Final/lang.png (PNG copy)> <./images/protected.png (PNG copy)> <./im
-ages/geoenabled.png (PNG copy)>] (./conclusion.tex) (./report.bbl
+<use ./images/geoenabled.png>) (./related-work.tex) [8 <./images/Bates-Final/li
+stedcount.png (PNG copy)> <./images/Bates-Final/lang.png (PNG copy)> <./images/
+protected.png (PNG copy)> <./images/geoenabled.png (PNG copy)>]
+(./conclusion.tex) (./report.bbl
 Underfull \hbox (badness 10000) detected at line 3
 \T1/ptm/m/n/8 [1]
  []
@@ -685,7 +685,7 @@ Underfull \hbox (badness 10000) detected at line 52
  []
 
 ) [9] (./user-attributes.tex
-Underfull \hbox (badness 10000) in paragraph at lines 77--2
+Underfull \hbox (badness 10000) in paragraph at lines 82--2
 
  []
 
@@ -739,7 +739,7 @@ cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-tex
 live/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on report.pdf (11 pages, 1192100 bytes).
+Output written on report.pdf (11 pages, 1192924 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
