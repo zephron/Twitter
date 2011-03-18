@@ -30,7 +30,20 @@ To quantify these potential discrepancies, we performed attribute profiling for 
 
 Two of the attributes we examined were true/false values: protected and geo-enabled.  Below is a table of percentages of users who enabled each attribute, for the core, connected, and random data sets.
 
-[table of percentages for boolean attribs]
+\begin{center}
+\begin{tabular}{| l | r | r | r |}
+\hline
+\textbf{Attribute} & \textbf{Core} & \textbf{Connected} & \textbf{Random} \\ \hline
+Protected & 3.6 & 11.8 & 8.3 \\ \hline
+Geo-Enabled & 24.5 & 17.6 & 6.7 \\ \hline
+Verified & 0.1 & 0.0 & 0.0 \\ \hline
+Contributors Enabled & 0.0 & 0.0 & 0.0 \\ \hline
+Show All Inline Media & 7.9 & 5.4 & 1.6 \\ \hline
+URL & 49.7 & 35.7 & 10.2 \\ \hline
+Is Translator & 0.0 & 0.0 & 0.0 \\ \hline
+\end{tabular}
+\end{center}
+\textit{Attribute distribution percentages for three data sets.}\\
 
 We found that our core users were less than half as likely to be protected, and more than three times more likely to allow the inclusion of GPS information in their tweets than the random users.  The percentage of geo-enabled users in the connected subgraph is inbetween that of core and random, which indicates that the original user selection could have carried over to the first-hop connections to some extent.  Interestingly, the subgraph users are more likely than either of the other sets to be protected.  This may be because users who are connected to the initial group, which we would characterize as more ``established", are more experienced than the average random user, as random users likely include many people who have signed up but have not made much use of their accounts.  The random set could, for example, include users who are not connected to anyone else.
 
@@ -67,6 +80,7 @@ Italian & 0.3 & 0.4 & 0.5 \\ \hline
 Korean & 0.1 &  0.1 & 0.0 \\ \hline
 \end{tabular}
 \end{center}
+\textit{Language distribution percentages for three data sets.}\\
 
 \subsubsection{Location}
 
