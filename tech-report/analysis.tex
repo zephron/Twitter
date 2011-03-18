@@ -90,6 +90,35 @@ Figure \ref{fig:follower_count}, a visualization of bias across follower count g
  \caption{A connectivity bias chart for number of lists a user appears on in logarithmically increasing groupings.}
 \end{figure*}
 
+\begin{figure*}[t]
+ \centering
+ \subfigure[A connectivity bias chart for users by their account creation date.  The upper bound for each range is displayed.  Groups are organized in reverse chronological order for consistency; rare users appear on the bottom and left. ]{
+ \includegraphics[bb=0 0 620 254, scale=.3]{./images/Bates-Final/sysage.png}
+ % sysage.png: 826x339 pixel, 96dpi, 21.86x8.97 cm, bb=0 0 620 254
+ \label{fig:sysage}
+ }
+ \subfigure[A connectivity bias chart for users by language setting.]{
+ \includegraphics[bb=0 0 424 194, scale=.4]{./images/Bates-Final/lang.png}
+ % lang.png: 565x259 pixel, 96dpi, 14.95x6.85 cm, bb=0 0 424 194
+ \label{fig:lang}
+ }
+\end{figure*}
+
+\begin{figure*}[t]
+ \centering
+ \subfigure[A connectivity bias chart for whether or not the user's account is protected.]{
+ \includegraphics[bb=0 0 188 86, scale=.5]{./images/protected.png}
+ % protected.png: 250x114 pixel, 96dpi, 6.62x3.02 cm, bb=0 0 188 86
+ \label{fig:protected}
+ }
+\hspace{30 mm}
+ \subfigure[A connectivity bias chart for whether or not the user's account is geo-enabled to include location information with each tweet.]{
+ \includegraphics[bb=0 0 214 80, scale=.5]{./images/geoenabled.png}
+ % geoenabled.png: 285x107 pixel, 96dpi, 7.54x2.83 cm, bb=0 0 214 80
+ \label{fig:geoenabled}
+ }
+\end{figure*}
+
 Moving away from the downward diagonal in either direction, it can be seen that groups become increasingly biased against following one another.  It looks as though this trend begins to dissipate once the degree of the incoming connection increases to above 50,000.  Unfortunately, this is obscured by the absence of a number of relationships that were not contained in our dataset.  The column for 199,999 represents only a single account in our subgraph, which is why the relationship transitions are so distinct.  This column is not being considered.
 
 Figure \ref{fig:friend_count}, a visualization of bias for the friend count attribute, contains much of the same trends that are observed in Figure \ref{fig:follower_count}.  A subtle bias towards following users of a similar friend count is clearly visible here along the chart's diagonal.  This bias grows stronger once the grouping being follower reaches a degree of greater than 2000, at which point there is extremely strong bias in favor of following users from these groups.  Unlike with follower count, low degree users follow eachother at a frequency above that which would be expected in an unbiased network.
@@ -100,35 +129,9 @@ Figure \ref{fig:utc_offset} displays attribute relationships for users in differ
  
 Figure \ref{fig:listed_count} displays connectivity bias based on the number of Twitter lists tha a user appears on.  Lists are a way to organize and separate different message streams, and our intuition here was that there would be a bias towards following users that appear more frequently on lists.  As it turns out, this trend is only present when considering users of a low listed count degree.  Groupings of users that appear on over 100 lists display a consistent and considerable bias against following other high degree listed count users.
 
-\begin{figure}[h]
- \centering
- \includegraphics[bb=0 0 188 86, scale=.5]{./images/protected.png}
- % protected.png: 250x114 pixel, 96dpi, 6.62x3.02 cm, bb=0 0 188 86
- \caption{A connectivity bias chart for whether or not the user's account is protected.}
- \label{fig:protected}
-\end{figure}
-
-\begin{figure}[h]
- \centering
- \includegraphics[bb=0 0 214 80, scale=.5]{./images/geoenabled.png}
- % geoenabled.png: 285x107 pixel, 96dpi, 7.54x2.83 cm, bb=0 0 214 80
- \caption{A connectivity bias chart for whether or not the user's account is geo-enabled to include location information with each tweet.}
- \label{fig:geoenabled}
-\end{figure}
-
 Figure \ref{fig:protected} displays connectivity bias based on whether or not a user's messages are protected.  The only considerable bias displayed in this chart is that users with protected accounts are biased against following one another.  Figure \ref{fig:geoenabled} displays significant positive bias for all relationships featuring non-geoenabled user groupings as well as a negative bias for \textit{Geoenabled follows Geoenabled}.
 
 Figures \ref{fig:follower_count}, \ref{fig:friend_count} likely speak to two distinct purposes for which Twitter is used.  The bias for the protected and geoenabled attributes likely share a common bond.  The enabling of these options likely indicates that a user wishes to use Twitter amongst a small group of known friends.  High profile, influential public users will not generally have these options enabled.  Since our premise is that there is a bias in the Twitter network towards following influential users, it stands to reason that there is a negative bias in a relationship between two groupings that does not contain these rare users.
-
-
-
-\begin{figure}[t]
- \centering
- \includegraphics[bb=0 0 424 194, scale=.5]{./images/Bates-Final/lang.png}
- % lang.png: 565x259 pixel, 96dpi, 14.95x6.85 cm, bb=0 0 424 194
- \caption{A connectivity bias chart for users by language setting.}
- \label{fig:lang}
-\end{figure}
 
 \subsection{Comparing Bias Across Different Attributes}
 \label{sub:crossattribute}
