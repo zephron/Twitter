@@ -1,3 +1,83 @@
+\begin{figure*}[t]
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/ca.pdf}
+\caption{Followers of California}
+\label{fig:state-ca}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/tx.pdf}
+\caption{Followers of Texas}
+\label{fig:state-tx}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/ny.pdf}
+\caption{Followers of New York}
+\label{fig:state-ny}
+\end{minipage}
+\end{figure*}
+
+\begin{figure*}[t]
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/fl.pdf}
+\caption{Followers of Florida}
+\label{fig:state-fl}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/il.pdf}
+\caption{Followers of Illinois}
+\label{fig:state-il}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/ga.pdf}
+\caption{Followers of Georgia}
+\label{fig:state-ga}
+\end{minipage}
+\end{figure*}
+
+\begin{figure*}[t]
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/oh.pdf}
+\caption{Followers of Ohio}
+\label{fig:state-oh}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/pa.pdf}
+\caption{Followers of Pennsylvania}
+\label{fig:state-pa}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/wa.pdf}
+\caption{Followers of Washington}
+\label{fig:state-wa}
+\end{minipage}
+\end{figure*}
+
+\begin{center}
+\begin{figure*}[t]
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/nc.pdf}
+\caption{Followers of North Carolina}
+\label{fig:state-nc}
+\end{minipage}
+\end{figure*}
+\end{center}
+
 Our results are visualized for each attribute in figures throughout this paper.  These figures can be interpretted as follows: the groupings that are orderd by row are following the groupings that are ordered by column.  To read the bias for a particular relationship in these charts, find the desired row grouping and move right across the page.  Negative bias relationships are shaded red, and indicate that a row group has a bias against following a particular column group.  Positive bias relationships are shaded green, and indicate that a row group is biased in favor of following a particular column group.  The shade color increases with the strength of the bias.  Relationships that were not contained in our dataset are represented by gray-shaded empty squares.  For the sake of readability, the strength of shading is adjusted across different figures.  The strength of observed biases across different attributes is evaluated in \ref{sub:crossattribute}
 
 Figure \ref{fig:follower_count}, a visualization of bias across follower count groupings, reveals a number of interesting facets of our Twitter subgraph.  One important feature is the values on the diagonal line moving from the top left to botthom right corner of the graph.  This line marks a group's affinity towards following itself, and will be referred to often in this section.  Here, we observe that our groupings are either neutral or subtly positively biased in favor of following their own group.  The strength of this bias increases with the number of followers.  The only exception to this trend is at the lowest follower count level, where our group is biased against following itself.  Across our results for the quantitative attributes it can be observed that users of extremely low degree exhibit unique behavior.
