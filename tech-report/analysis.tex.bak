@@ -1,3 +1,83 @@
+\begin{figure*}[t]
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/ca.pdf}
+\caption{Followers of California}
+\label{fig:state-ca}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/tx.pdf}
+\caption{Followers of Texas}
+\label{fig:state-tx}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/ny.pdf}
+\caption{Followers of New York}
+\label{fig:state-ny}
+\end{minipage}
+\end{figure*}
+
+\begin{figure*}[t]
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/fl.pdf}
+\caption{Followers of Florida}
+\label{fig:state-fl}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/il.pdf}
+\caption{Followers of Illinois}
+\label{fig:state-il}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/ga.pdf}
+\caption{Followers of Georgia}
+\label{fig:state-ga}
+\end{minipage}
+\end{figure*}
+
+\begin{figure*}[t]
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/oh.pdf}
+\caption{Followers of Ohio}
+\label{fig:state-oh}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/pa.pdf}
+\caption{Followers of Pennsylvania}
+\label{fig:state-pa}
+\end{minipage}
+\hspace{2mm}
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/wa.pdf}
+\caption{Followers of Washington}
+\label{fig:state-wa}
+\end{minipage}
+\end{figure*}
+
+\begin{center}
+\begin{figure*}[t]
+\begin{minipage}[b]{0.32\linewidth}
+\centering
+\includegraphics[width=53mm]{./images/nc.pdf}
+\caption{Followers of North Carolina}
+\label{fig:state-nc}
+\end{minipage}
+\end{figure*}
+\end{center}
+
 Our results are visualized for each attribute in figures throughout this paper.  These figures can be interpretted as follows: the groupings that are orderd by row are following the groupings that are ordered by column.  To read the bias for a particular relationship in these charts, find the desired row grouping and move right across the page.  Negative bias relationships are shaded red, and indicate that a row group has a bias against following a particular column group.  Positive bias relationships are shaded green, and indicate that a row group is biased in favor of following a particular column group.  The shade color increases with the strength of the bias.  Relationships that were not contained in our dataset are represented by gray-shaded empty squares.  For the sake of readability, the strength of shading is adjusted across different figures.  The strength of observed biases across different attributes is evaluated in \ref{sub:crossattribute}
 
 Figure \ref{fig:follower_count}, a visualization of bias across follower count groupings, reveals a number of interesting facets of our Twitter subgraph.  One important feature is the values on the diagonal line moving from the top left to botthom right corner of the graph.  This line marks a group's affinity towards following itself, and will be referred to often in this section.  Here, we observe that our groupings are either neutral or subtly positively biased in favor of following their own group.  The strength of this bias increases with the number of followers.  The only exception to this trend is at the lowest follower count level, where our group is biased against following itself.  Across our results for the quantitative attributes it can be observed that users of extremely low degree exhibit unique behavior.
@@ -20,24 +100,9 @@ Figure \ref{fig:utc_offset} displays attribute relationships for users in differ
  
 Figure \ref{fig:listed_count} displays connectivity bias based on the number of Twitter lists tha a user appears on.  Lists are a way to organize and separate different message streams, and our intuition here was that there would be a bias towards following users that appear more frequently on lists.  As it turns out, this trend is only present when considering users of a low listed count degree.  Groupings of users that appear on over 100 lists display a consistent and considerable bias against following other high degree listed count users.
 
-\begin{figure}[h]
- \centering
- \includegraphics[bb=0 0 188 86, scale=.5]{./images/protected.png}
- % protected.png: 250x114 pixel, 96dpi, 6.62x3.02 cm, bb=0 0 188 86
- \caption{A connectivity bias chart for whether or not the user's account is protected.}
- \label{fig:protected}
-\end{figure}
-
-\begin{figure}[h]
- \centering
- \includegraphics[bb=0 0 214 80, scale=.5]{./images/geoenabled.png}
- % geoenabled.png: 285x107 pixel, 96dpi, 7.54x2.83 cm, bb=0 0 214 80
- \caption{A connectivity bias chart for whether or not the user's account is geo-enabled to include location information with each tweet.}
- \label{fig:geoenabled}
-\end{figure}
-
 Figure \ref{fig:protected} displays connectivity bias based on whether or not a user's messages are protected.  The only considerable bias displayed in this chart is that users with protected accounts are biased against following one another.  Figure \ref{fig:geoenabled} displays significant positive bias for all relationships featuring non-geoenabled user groupings as well as a negative bias for \textit{Geoenabled follows Geoenabled}.
 
+Figures \ref{fig:state-ca}-\ref{fig:state-nc} show connectivity bias for the top 10 U.S. states, within the set of edges going to or coming from those states.  In general, states show a tendancy towards following themselves, and are followed by bordering states.  In the case of California, all states except the remaining top 9 are biased toward following California.  The mostly consistent bias against followers from the top 10 states is likely due to their being central to this analysis.
 
 \begin{figure}[t]
  \centering
@@ -47,13 +112,40 @@ Figure \ref{fig:protected} displays connectivity bias based on whether or not a 
  \label{fig:lang}
 \end{figure}
 
+\begin{figure}[t]
+ \centering
+ \includegraphics[bb=0 0 188 86, scale=.5]{./images/protected.png}
+ % protected.png: 250x114 pixel, 96dpi, 6.62x3.02 cm, bb=0 0 188 86
+ \caption{A connectivity bias chart for whether or not the user's account is protected.}
+ \label{fig:protected}
+\end{figure}
+
+\begin{figure}[t]
+ \centering
+ \includegraphics[bb=0 0 214 80, scale=.5]{./images/geoenabled.png}
+ % geoenabled.png: 285x107 pixel, 96dpi, 7.54x2.83 cm, bb=0 0 214 80
+ \caption{A connectivity bias chart for whether or not the user's account is geo-enabled to include location information with each tweet.}
+ \label{fig:geoenabled}
+\end{figure}
+
+\subsection{Comparing Bias Across Different Attributes}
+\label{sub:crossattribute}
+CROSS ATTRIBUTE YEAAAAHHHHH!!!
+
+\noindent \begin{tabular}[t]{| p{1in} | p{1.75in} | p{1in} | p{1in} | p{1.25in} |}
+\hline
+\textbf{Bias Pattern} & \textbf{Attribute} & \textbf{Direction} & \textbf{Strength}  \\ \hline
+Location & User-reported geographic location. & 3481 & 3481  \\ \hline
+Protected & If true, only approved followers may see the user's tweets & 2 & 2  \\ \hline
+Followers Count & Number of users who track this user's tweets & 2116 & 2116 \\ \hline
+Friends Count & Number of users this user follows & 2116 & 2116 \\ \hline
+Account age & Difference between account creation date and current date & 169 & 169  \\ \hline
+\end{tabular}
+
+
 \subsection{Observations}
 Conclude that across these attributes there are several identifiable patterns -- similar users follow eachother, dissimilar users follow eachother, low degree users follow high degree users, extreme low degree users deviate from general usage, extreme high degree users deviate from general usage.  Identify which attributes belong to which patterns.\\
 
 Figures \ref{fig:follower_count}, \ref{fig:friend_count} and \ref{fig:status_count} likely speak to two distinct purposes for which Twitter is used.
 
 The bias for the protected and geoenabled attributes likely share a common bond.  The enabling of these options likely indicates that a user wishes to use Twitter amongst a small group of known friends.  High profile, influential public users will not generally have these options enabled.  Since our premise is that there is a bias in the Twitter network towards following influential users, it stands to reason that there is a negative bias in a relationship between two groupings that does not contain these rare users.
-
-\subsection{Comparing Bias Across Different Attributes}
-\label{sub:crossattribute}
-CROSS ATTRIBUTE YEAAAAHHHHH!!!
