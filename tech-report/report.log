@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.14)  18 MAR 2011 05:59
-=======
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.10)  18 MAR 2011 05:51
->>>>>>> 47f543aaa161944299cb39434309eb916ff3195c
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.14)  18 MAR 2011 06:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10,7 +6,13 @@ entering extended mode
 (./report.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
 (./IEEEtran11.cls
 Document Style `IEEEtran' <30-August-1993>.
 Upgraded to `IEEEtran.cls' <10-Jan.-1996> !PN
@@ -368,11 +370,7 @@ Package subfigure Warning: Your document class has a bad definition
 (/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-) (./report.aux
-
-LaTeX Warning: Label `app:table_cross_attribute' multiply defined.
-
-)
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -388,10 +386,11 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 26.
- (/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+(/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count91
 \scratchdimen=\dimen109
@@ -526,7 +525,6 @@ Package pdftex.def Warning: Option `bb' does not make sense,
 <./images/utc_offset.png, id=29, 843.15pt x 316.18124pt>
 File: ./images/utc_offset.png Graphic file (type png)
 
-<<<<<<< HEAD
 <use ./images/utc_offset.png>) (./analysis.tex
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/ca.pdf): PDF inclusion: found 
@@ -606,68 +604,57 @@ Package pdftex.def Warning: Option `bb' does not make sense,
 File: ./images/Bates-Final/listedcount.png Graphic file (type png)
 
 <use ./images/Bates-Final/listedcount.png>
-
-Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 99.
-
-<./images/Bates-Final/sysage.png, id=66, 621.82312pt x 255.20343pt>
-File: ./images/Bates-Final/sysage.png Graphic file (type png)
-
-<use ./images/Bates-Final/sysage.png>
-
-Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 104.
-
-<./images/Bates-Final/lang.png, id=67, 425.33907pt x 194.97844pt>
-File: ./images/Bates-Final/lang.png Graphic file (type png)
-
-<use ./images/Bates-Final/lang.png>
-
-Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 113.
-
-<./images/protected.png, id=68, 188.20313pt x 85.82062pt>
-File: ./images/protected.png Graphic file (type png)
-=======
-<use ./images/utc_offset.png>)
-
-! LaTeX Error: File `analysis.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-(./related-work.tex)
-Underfull \vbox (badness 1867) has occurred while \output is active []
-
- [5 <./images/Bates-Final/followercount.png (PNG copy)> <./images/Bates-Final/f
-riendscount.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
->>>>>>> 47f543aaa161944299cb39434309eb916ff3195c
-
-
-<<<<<<< HEAD
-Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 119.
-
-<./images/geoenabled.png, id=69, 214.55156pt x 80.55093pt>
-File: ./images/geoenabled.png Graphic file (type png)
-
-<use ./images/geoenabled.png>
 Underfull \vbox (badness 5064) has occurred while \output is active []
 
 
 Underfull \vbox (badness 2134) has occurred while \output is active []
 
- [7 <./images/oh.pdf> <./images/pa.pdf> <./images/wa.pdf> <./images/nc.pdf>])
+ [7 <./images/oh.pdf> <./images/pa.pdf> <./images/wa.pdf> <./images/nc.pdf>]
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 109.
+
+<./images/Bates-Final/lang.png, id=74, 425.33907pt x 194.97844pt>
+File: ./images/Bates-Final/lang.png Graphic file (type png)
+
+<use ./images/Bates-Final/lang.png>
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 117.
+
+<./images/protected.png, id=75, 188.20313pt x 85.82062pt>
+File: ./images/protected.png Graphic file (type png)
+
+<use ./images/protected.png>
+
+Package pdftex.def Warning: Option `bb' does not make sense,
+(pdftex.def)                using `viewport' instead on input line 125.
+
+<./images/geoenabled.png, id=76, 214.55156pt x 80.55093pt>
+File: ./images/geoenabled.png Graphic file (type png)
+
+<use ./images/geoenabled.png>
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]\T1/ptm/m/n/10 Difference be-tween ac-count
+ []
+
+
+Overfull \hbox (147.784pt too wide) in paragraph at lines 135--144
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+
+Underfull \vbox (badness 1622) has occurred while \output is active []
+
+)
 (./related-work.tex) [8 <./images/Bates-Final/listedcount.png (PNG copy)> <./im
-ages/Bates-Final/sysage.png (PNG copy)> <./images/Bates-Final/lang.png (PNG cop
-y)> <./images/protected.png (PNG copy)> <./images/geoenabled.png (PNG copy)>]
-(./conclusion.tex) (./report.bbl
-=======
-(./conclusion.tex) (./report.bbl [6 <./images/Bates-Final/statusescount.png (PN
-G copy)> <./images/utc_offset.png (PNG copy)>]
->>>>>>> 47f543aaa161944299cb39434309eb916ff3195c
+ages/Bates-Final/lang.png (PNG copy)> <./images/protected.png (PNG copy)> <./im
+ages/geoenabled.png (PNG copy)>] (./conclusion.tex) (./report.bbl
 Underfull \hbox (badness 10000) detected at line 3
 \T1/ptm/m/n/8 [1]
  []
@@ -712,13 +699,7 @@ Underfull \hbox (badness 10000) detected at line 52
 \T1/ptm/m/n/8 [9]
  []
 
-<<<<<<< HEAD
 ) [9] (./user-attributes.tex
-=======
-) [7
-
-] (./user-attributes.tex
->>>>>>> 47f543aaa161944299cb39434309eb916ff3195c
 Underfull \hbox (badness 10000) in paragraph at lines 77--2
 
  []
@@ -746,39 +727,22 @@ Underfull \hbox (badness 2376) in paragraph at lines 21--21
 ) (./cross-attribute.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<<<<<<< HEAD
  [10
-=======
-[8
->>>>>>> 47f543aaa161944299cb39434309eb916ff3195c
 
 ]
 [11] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 2120 strings out of 493848
- 26495 string characters out of 1152823
- 103731 words of memory out of 3000000
- 5289 multiletter control sequences out of 15000+50000
+ 2110 strings out of 493848
+ 26261 string characters out of 1152823
+ 102631 words of memory out of 3000000
+ 5280 multiletter control sequences out of 15000+50000
  61740 words of font info for 119 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  32i,8n,24p,1016b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
-=======
- 2027 strings out of 495061
- 24659 string characters out of 1182620
- 80598 words of memory out of 3000000
- 5115 multiletter control sequences out of 15000+50000
- 61740 words of font info for 119 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 32i,8n,24p,963b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
->>>>>>> 47f543aaa161944299cb39434309eb916ff3195c
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/
@@ -787,17 +751,9 @@ cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-tex
 live/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmri8a.pfb>
-<<<<<<< HEAD
-Output written on report.pdf (11 pages, 1236626 bytes).
+Output written on report.pdf (11 pages, 1193101 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Output written on report.pdf (8 pages, 720808 bytes).
-PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 47f543aaa161944299cb39434309eb916ff3195c
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

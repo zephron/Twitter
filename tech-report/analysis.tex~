@@ -21,6 +21,7 @@
 \end{minipage}
 \end{figure*}
 
+
 \begin{figure*}[t]
 \begin{minipage}[b]{0.32\linewidth}
 \centering
@@ -105,6 +106,19 @@ Figure \ref{fig:follower_count}, a visualization of bias across follower count g
 \end{figure*}
 
 \begin{figure*}[t]
+Figure \ref{fig:protected} displays connectivity bias based on whether or not a user's messages are protected.  The only considerable bias displayed in this chart is that users with protected accounts are biased against following one another.  Figure \ref{fig:geoenabled} displays significant positive bias for all relationships featuring non-geoenabled user groupings as well as a negative bias for \textit{Geoenabled follows Geoenabled}.
+
+Figures \ref{fig:state-ca}-\ref{fig:state-nc} show connectivity bias for the top 10 U.S. states, within the set of edges going to or coming from those states.  In general, states show a tendancy towards following themselves, and are followed by bordering states.  In the case of California, all states except the remaining top 9 are biased toward following California.  The mostly consistent bias against followers from the top 10 states is likely due to their being central to this analysis.
+
+\begin{figure}[t]
+ \centering
+ \includegraphics[bb=0 0 424 194, scale=.5]{./images/Bates-Final/lang.png}
+ % lang.png: 565x259 pixel, 96dpi, 14.95x6.85 cm, bb=0 0 424 194
+ \caption{A connectivity bias chart for users by language setting.}
+ \label{fig:lang}
+\end{figure}
+
+\begin{figure}[t]
  \centering
  \subfigure[A connectivity bias chart for whether or not the user's account is protected.]{
  \includegraphics[bb=0 0 188 86, scale=.5]{./images/protected.png}
@@ -112,8 +126,11 @@ Figure \ref{fig:follower_count}, a visualization of bias across follower count g
  \label{fig:protected}
  }
 \hspace{30 mm}
-
  \subfigure[A connectivity bias chart for whether or not the user's account is geo-enabled to include location information with each tweet.]{
+\end{figure}
+
+\begin{figure}[t]
+ \centering
  \includegraphics[bb=0 0 214 80, scale=.5]{./images/geoenabled.png}
  % geoenabled.png: 285x107 pixel, 96dpi, 7.54x2.83 cm, bb=0 0 214 80
  \label{fig:geoenabled}
@@ -125,6 +142,19 @@ Moving away from the downward diagonal in either direction, it can be seen that 
 Figure \ref{fig:friend_count}, a visualization of bias for the friend count attribute, contains much of the same trends that are observed in Figure \ref{fig:follower_count}.  A subtle bias towards following users of a similar friend count is clearly visible here along the chart's diagonal.  This bias grows stronger once the grouping being follower reaches a degree of greater than 2000, at which point there is extremely strong bias in favor of following users from these groups.  Unlike with follower count, low degree users follow eachother at a frequency above that which would be expected in an unbiased network.
 
 Figure \ref{fig:status_count} displays bias patterns for user groupings by status count.  Our intuition here was that users would be that likely to connect to user accounts with different degrees of status count.  This intuition is confirmed in the graph.  When considering status count, groupings are biased against following their own group until the very high degree groupings.  Low degree tweeters appear to be following high degree tweeters.  High degree tweeters are biased towards following two different degree ranges of users, those of either a very low or very high degree.
+\subsection{Comparing Bias Across Different Attributes}
+\label{sub:crossattribute}
+CROSS ATTRIBUTE YEAAAAHHHHH!!!
+
+\noindent \begin{tabular}[t]{| p{1in} | p{1.75in} | p{1in} | p{1in} | p{1.25in} |}
+\hline
+\textbf{Bias Pattern} & \textbf{Attribute} & \textbf{Direction} & \textbf{Strength}  \\ \hline
+Location & User-reported geographic location. & 3481 & 3481  \\ \hline
+Protected & If true, only approved followers may see the user's tweets & 2 & 2  \\ \hline
+Followers Count & Number of users who track this user's tweets & 2116 & 2116 \\ \hline
+Friends Count & Number of users this user follows & 2116 & 2116 \\ \hline
+Account age & Difference between account creation date and current date & 169 & 169  \\ \hline
+\end{tabular}
 
 Figure \ref{fig:utc_offset} displays attribute relationships for users in different parts of the world by their offset from coordinated universal time.  While, UTC Offset generally refers to a longitudinal slice of the globe, certain offsets are used exclusively by certain countries or regions.  We observe that the strongest positive bias in this chart is at UTC Offset +5.5 following UTC Offset -8.  These two offsets correspond to user accounts in India and Sri Lanka following user accounts in Pacific Standard Time.  All groupings displayed varying degrees of bias against following user accounts at UTC Offset +9, which corresponds to the time zone in Japan and North and South Korea.  It should be noted that some of relationships displayed in this chart were extremely rare in our subgraph and may not be reliable.
  
@@ -137,5 +167,9 @@ Figures \ref{fig:follower_count}, \ref{fig:friend_count} likely speak to two dis
 \subsection{Comparing Bias Across Different Attributes}
 \label{sub:crossattribute}
 While analyizing each attribute, we indentified several recurring bias patterns through which the attributes can be compared.  Each attribute can be described by its behavior across these bias patterns.  Across all attributes, we observed \textit{group follows itself} and \textit{group follows others} patterns.  There are additional patterns for attributes of continuous range -- \textit{low degree follows low degree}, \textit{high degree follows high degree}, \textit{low degree follows high degree}, and \textit{high degree follows low degree}.
+\subsection{Observations}
+Conclude that across these attributes there are several identifiable patterns -- similar users follow eachother, dissimilar users follow eachother, low degree users follow high degree users, extreme low degree users deviate from general usage, extreme high degree users deviate from general usage.  Identify which attributes belong to which patterns.\\
 
-We have characterized the strength of each of these bias patterns across all attributes.  For the sake of brevity, these have been summarized as a table in appendix \label{app:table_cross_attribute}.  Rather than mathematically define each bias pattern, we have decided to keep our identifications loose and use our visualizations as a guide.  The transition 'low degree' and 'high degree' is clear in the visual aids; the included table serves only as guide to compare the relative strengths of patterns in different attributes.
+Figures \ref{fig:follower_count}, \ref{fig:friend_count} and \ref{fig:status_count} likely speak to two distinct purposes for which Twitter is used.
+
+The bias for the protected and geoenabled attributes likely share a common bond.  The enabling of these options likely indicates that a user wishes to use Twitter amongst a small group of known friends.  High profile, influential public users will not generally have these options enabled.  Since our premise is that there is a bias in the Twitter network towards following influential users, it stands to reason that there is a negative bias in a relationship between two groupings that does not contain these rare users.
