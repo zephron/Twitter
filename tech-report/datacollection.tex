@@ -39,6 +39,7 @@ We found that our core users were less than half as likely to be protected, and 
  \includegraphics[bb=0 0 800 500,scale=.2]{./images/lang-core.png}
  % lang-core.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
  \caption{For the core set, the percentage users who have marked Japanese as their Twitter language is more than four times that of the random set.}
+\label{fig:lang-core}
 \end{figure}
 
 \begin{figure}[h]
@@ -46,11 +47,12 @@ We found that our core users were less than half as likely to be protected, and 
  \includegraphics[bb=0 0 800 500,scale=.2]{./images/lang-rand.png}
   % lang-rand.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
  \caption{English, Spanish, and Japanese are the top languages for both the connected and the random user sets.}
+\label{fig:lang-rand}
 \end{figure}
 
 \subsubsection{Language}
 
-Users have seven choices for the language attribute.  Choice of language affects the text of the Twitter interface, but does not translate tweets.  It is unclear whether the language changes based on the location (IP address) of the user, or if English is default for everyone.  We find that, in comparison to the random set, the connected and core users are substantially more likely to be configured for using Japanese.  This could indicate that the filtering techniques used to gather our original set of users was more likely to pick up Japanese users.
+Users have seven choices for the language attribute.  Choice of language affects the text of the Twitter interface, but does not translate tweets.  It is unclear whether the language changes based on the location (IP address) of the user, or if English is default for everyone.  We find that, in comparison to the random set, the connected and core users are substantially more likely to be configured for using Japanese (Figures \ref{fig:lang-core}, \ref{fig:lang-rand}).  This could indicate that the filtering techniques used to gather our original set of users was more likely to pick up Japanese users.
 
 \begin{center}
 \begin{tabular}{| l |  r | r | r |}
@@ -68,13 +70,12 @@ Korean & 0.1 &  0.1 & 0.0 \\ \hline
 
 \subsubsection{Location}
 
-Say how it lines up well with the census, too.
-
 \begin{figure}[t]
  \centering
  \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-conn.png}
  % loca-conn.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
 \caption{}
+\label{fig:loca-conn}
 %\end{figure}
 
 %\begin{figure}
@@ -82,6 +83,7 @@ Say how it lines up well with the census, too.
  \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-rand.png}
  % loca-rand.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
 \caption{}
+\label{fig:loca-rand}
 %\end{figure}
 
 %\begin{figure}
@@ -89,7 +91,10 @@ Say how it lines up well with the census, too.
  \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-actu.png}
  % loca-actu.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
 \caption{The distribution of U.S. states for both the random and the connected datasets aligns well with the population census data.}
+\label{fig:loca-actu}
 \end{figure}
+
+We examined data for the ten U.S. states with the greatest number of associated users.  Distribution of locations was similar between the connected and random sets, and also aligned fairly well with population data (Figures \ref{fig:loca-conn}, \ref{fig:loca-rand}, \ref{fig:loca-actu}).  For the states that appear in all three data sets, all percentages are within 5\% of each other, and most are differ by no more than 2\%.  Also, the top five states are the same and in the same order.
 
 \subsection{Approaching Attribute Analysis}
 
