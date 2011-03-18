@@ -1,6 +1,6 @@
 \subsection{Approaching Attribute Analysis}
 
-Although each user account is associated with 33 publicly available attributes, only a few of these were of any interest for our purposes.  10 of the attributes are profile display settings, which were not considered.  Another 6 are user identified such as name and ID which are not of any use to network-level analysis.  We initially identified 14 potential attributes of interest.  Further description of these attributes is available in appendix \ref{app:user-attributes}.
+Although each user account is associated with 33 publicly available attributes, only a few of these were of any interest for our purposes.  10 of the attributes are profile display settings, which were not considered.  Another 6 are user identifiers such as name and ID and are not of any use to network-level analysis.  We initially identified 14 potential attributes of interest.  Further description of these attributes is available in appendix \ref{app:user-attributes}.
 
 After selecting attributes for consideration, we identified appropriate groupings for each attribute.  The format of the considered attributes took one of three forms.  These formats informed the manner in which they were grouped.  Many of the attributes had a finite number of options, such as a boolean value for \textit{Protected} or one of seven options for \textit{Language}.  A group was assigned for each possible value of these attributes.
 
@@ -10,7 +10,7 @@ The final and most challenging format took the form a free text field.  Free tex
 
 Paragraph: Mention the simple random survey of records that was performed, the percentage of users with no entry, the percentage of users with an indecipherable entry, etc.
 
-After identifying discrete groupings for each attribute it became possible to identify attribute relationships within our dataset.  Each edge in our subgraph represents a relationship between two Twitter users, each with an group assignment for each attribute.  We created a unique identifier for all possible relationships for each attribute.  We then processed our dataset by assigning these identifiers and counting their frequency.
+After identifying discrete groupings for each attribute it became possible to enumerate all possible attribute relationships within our dataset.  Each edge in our subgraph represents a relationship between two Twitter users, each with a group assignment for each attribute.  We created a unique identifier for all possible relationships for each attribute.  We then processed our dataset by assigning these identifiers and counting their frequency.
 
 \begin{figure*}[t]
  \centering
