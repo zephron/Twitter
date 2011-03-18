@@ -20,17 +20,7 @@ Figure \ref{fig:utc_offset} displays attribute relationships for users in differ
  
 Figure \ref{fig:listed_count} displays connectivity bias based on the number of Twitter lists tha a user appears on.  Lists are a way to organize and separate different message streams, and our intuition here was that there would be a bias towards following users that appear more frequently on lists.  As it turns out, this trend is only present when considering users of a low listed count degree.  Groupings of users that appear on over 100 lists display a consistent and considerable bias against following other high degree listed count users.
 
-Figure \ref{fig:protected} displays connectivity bias based on whether or not a user's messages are protected.  The only considerable bias displayed in this chart is that users with protected accounts are biased against following one another.  Figure \ref{fig:geoenabled} displays significant positive bias for all relationships featuring non-geoenabled user groupings as well as a negative bias for \textit{Geoenabled follows Geoenabled}.
-
-
-\begin{figure}[t]
- \centering
- \includegraphics[bb=0 0 424 194, scale=.5]{./images/Bates-Final/lang.png}
- % lang.png: 565x259 pixel, 96dpi, 14.95x6.85 cm, bb=0 0 424 194
- \label{fig:lang}
-\end{figure}
-
-\begin{figure}[t]
+\begin{figure}[h]
  \centering
  \includegraphics[bb=0 0 188 86, scale=.5]{./images/protected.png}
  % protected.png: 250x114 pixel, 96dpi, 6.62x3.02 cm, bb=0 0 188 86
@@ -38,7 +28,7 @@ Figure \ref{fig:protected} displays connectivity bias based on whether or not a 
  \label{fig:protected}
 \end{figure}
 
-\begin{figure}[t]
+\begin{figure}[h]
  \centering
  \includegraphics[bb=0 0 214 80, scale=.5]{./images/geoenabled.png}
  % geoenabled.png: 285x107 pixel, 96dpi, 7.54x2.83 cm, bb=0 0 214 80
@@ -46,24 +36,22 @@ Figure \ref{fig:protected} displays connectivity bias based on whether or not a 
  \label{fig:geoenabled}
 \end{figure}
 
+Figure \ref{fig:protected} displays connectivity bias based on whether or not a user's messages are protected.  The only considerable bias displayed in this chart is that users with protected accounts are biased against following one another.  Figure \ref{fig:geoenabled} displays significant positive bias for all relationships featuring non-geoenabled user groupings as well as a negative bias for \textit{Geoenabled follows Geoenabled}.
+
+Figures \ref{fig:follower_count}, \ref{fig:friend_count} likely speak to two distinct purposes for which Twitter is used.  The bias for the protected and geoenabled attributes likely share a common bond.  The enabling of these options likely indicates that a user wishes to use Twitter amongst a small group of known friends.  High profile, influential public users will not generally have these options enabled.  Since our premise is that there is a bias in the Twitter network towards following influential users, it stands to reason that there is a negative bias in a relationship between two groupings that does not contain these rare users.
+
+
+
+\begin{figure}[t]
+ \centering
+ \includegraphics[bb=0 0 424 194, scale=.5]{./images/Bates-Final/lang.png}
+ % lang.png: 565x259 pixel, 96dpi, 14.95x6.85 cm, bb=0 0 424 194
+ \caption{A connectivity bias chart for users by language setting.}
+ \label{fig:lang}
+\end{figure}
+
 \subsection{Comparing Bias Across Different Attributes}
 \label{sub:crossattribute}
-CROSS ATTRIBUTE YEAAAAHHHHH!!!
+While analyizing each attribute, we indentified several recurring bias patterns through which the attributes can be compared.  Each attribute can be described by its behavior across these bias patterns.  Across all attributes, we observed \textit{group follows itself} and \text{group follows others} patterns.  There are additional patterns for attributes of continuous range -- \textit{low degree follows low degree}, \textit{high degree follows high degree}, \textit{low degree follows high degree}, and \textit{high degree follows low degree}.
 
-\noindent \begin{tabular}[t]{| p{1in} | p{1.75in} | p{1in} | p{1in} | p{1.25in} |}
-\hline
-\textbf{Bias Pattern} & \textbf{Attribute} & \textbf{Direction} & \textbf{Strength}  \\ \hline
-Location & User-reported geographic location. & 3481 & 3481  \\ \hline
-Protected & If true, only approved followers may see the user's tweets & 2 & 2  \\ \hline
-Followers Count & Number of users who track this user's tweets & 2116 & 2116 \\ \hline
-Friends Count & Number of users this user follows & 2116 & 2116 \\ \hline
-Account age & Difference between account creation date and current date & 169 & 169  \\ \hline
-\end{tabular}
-
-
-\subsection{Observations}
-Conclude that across these attributes there are several identifiable patterns -- similar users follow eachother, dissimilar users follow eachother, low degree users follow high degree users, extreme low degree users deviate from general usage, extreme high degree users deviate from general usage.  Identify which attributes belong to which patterns.\\
-
-Figures \ref{fig:follower_count}, \ref{fig:friend_count} and \ref{fig:status_count} likely speak to two distinct purposes for which Twitter is used.
-
-The bias for the protected and geoenabled attributes likely share a common bond.  The enabling of these options likely indicates that a user wishes to use Twitter amongst a small group of known friends.  High profile, influential public users will not generally have these options enabled.  Since our premise is that there is a bias in the Twitter network towards following influential users, it stands to reason that there is a negative bias in a relationship between two groupings that does not contain these rare users.
+We have characterized the strength of each of these bias patterns across all attributes.  For the sake of brevity, these have been summarized as a table in appendix \label{app:table_cross_attribute}.  Rather than mathematically define each bias pattern, we have decided to keep our identifications loose and use our visualizations as a guide.  The transition 'low degree' and 'high degree' is clear in the visual aids; the included table serves only as guide to compare the relative strengths of patterns in different attributes.

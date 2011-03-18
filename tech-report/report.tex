@@ -78,9 +78,23 @@ Online social network, Twitter, Measurement, Overlay topology
 \label{app:user-attributes}
 \input{user-attributes}
 
+\appendix{Bias Comparisons Across Attributes}
+\label{app:table_cross_attribute}
+\noindent \begin{tabular}[t]{| p{1in} | p{1.75in} | p{1in} | p{1in} | p{1.25in} |}
+\hline
+\textbf{Bias Pattern} & \textbf{Attribute} & \textbf{Direction} & \textbf{Strength}  \\ \hline
+Location & User-reported geographic location. & 3481 & 3481  \\ \hline
+Protected & If true, only approved followers may see the user's tweets & 2 & 2  \\ \hline
+Followers Count & Number of users who track this user's tweets & 2116 & 2116 \\ \hline
+Friends Count & Number of users this user follows & 2116 & 2116 \\ \hline
+Account age & Difference between account creation date and current date & 169 & 169  \\ \hline
+\end{tabular}
+
 \begin{comment}
 \section{Dataset Profile}
 \input{dataset-profile}
 \end{comment}
+
+
 
 \end{document}
