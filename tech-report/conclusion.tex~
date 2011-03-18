@@ -1,3 +1,0 @@
-In this paper we have presented a detailed analysis of a large subgraph of the Twitter network.  We have identified a number of influence patterns across different attributes within the twitter network.  Our work is unique in that it provides a method of tracking information flow without being dependant on access to individual messages.  There are a number of pitfalls to message analysis that our work avoids.  It is our belief that a combination of both methods of Twitter network analysis are necessary in order to gain a complete perspective on the way this tool is used.\\
-
-Future work -- ideas to consider regarding future projects that could come of our work?\\
