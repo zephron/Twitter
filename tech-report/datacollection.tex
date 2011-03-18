@@ -1,3 +1,43 @@
+\begin{figure}[h]
+ \centering
+ \includegraphics[bb=0 0 800 500,scale=.2]{./images/lang-core.png}
+ % lang-core.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
+ \caption{For the core set, the percentage users who have marked Japanese as their Twitter language is more than four times that of the random set.}
+\label{fig:lang-core}
+\end{figure}
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[bb=0 0 800 500,scale=.2]{./images/lang-rand.png}
+  % lang-rand.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
+ \caption{English, Spanish, and Japanese are the top languages for both the connected and the random user sets.}
+\label{fig:lang-rand}
+\end{figure}
+
+\begin{figure}[t]
+ \centering
+ \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-conn.png}
+ % loca-conn.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
+\caption{}
+\label{fig:loca-conn}
+%\end{figure}
+
+%\begin{figure}
+% \centering
+ \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-rand.png}
+ % loca-rand.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
+\caption{}
+\label{fig:loca-rand}
+%\end{figure}
+
+%\begin{figure}
+% \centering
+ \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-actu.png}
+ % loca-actu.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
+\caption{The distribution of U.S. states for both the random and the connected datasets aligns well with the population census data.}
+\label{fig:loca-actu}
+\end{figure}
+
 At the start of our work we inherited a large dataset from Rejaie \textit{et all} that was created through a biased sampling of the Twitter network.  The dataset contained partial connectivity information for 242,275 potentially influential users.  Due to limitations of the Twitter REST API at the time of collection, the connectivity data was incomplete.  Additionally, the dataset did not include the associated attribute information for each user because it was not germaine to Rejaie's previous work.  This dataset needed to be completed before beginning our analysis.
 
 Our goal was to characterize the relationships in a completed section of the Twitter network.  It was first necessary to determine if a large, complete subgraph existed within this dataset.  A collection of smaller subgraphs would not be sufficient as they would be less likely to capture the impact of rare influential users.  By performing a series of reconstructions of the graphs in the dataset we were able to discover a single subgraph of 215,606 sampled users.  Including the next hop information for these sampled users, the subgraph included 16 million unique user accounts.
@@ -34,11 +74,11 @@ Two of the attributes we examined were true/false values: protected and geo-enab
 \begin{tabular}{| l | r | r | r |}
 \hline
 \textbf{Attribute} & \textbf{Core} & \textbf{Connected} & \textbf{Random} \\ \hline
-Protected & 3.6 & 11.8 & 8.3 \\ \hline
-Geo-Enabled & 24.5 & 17.6 & 6.7 \\ \hline
+Protected & 3.6 & 12.3 & 8.3 \\ \hline
+Geo-Enabled & 24.5 & 15.8 & 6.7 \\ \hline
 Verified & 0.1 & 0.0 & 0.0 \\ \hline
 Contributors Enabled & 0.0 & 0.0 & 0.0 \\ \hline
-Show All Inline Media & 7.9 & 5.4 & 1.6 \\ \hline
+Show All Inline Media & 7.9 & 6.3 & 1.6 \\ \hline
 URL & 49.7 & 35.7 & 10.2 \\ \hline
 Is Translator & 0.0 & 0.0 & 0.0 \\ \hline
 \end{tabular}
@@ -46,22 +86,6 @@ Is Translator & 0.0 & 0.0 & 0.0 \\ \hline
 \textit{Attribute distribution percentages for three data sets.}\\
 
 We found that our core users were less than half as likely to be protected, and more than three times more likely to allow the inclusion of GPS information in their tweets than the random users.  The percentage of geo-enabled users in the connected subgraph is inbetween that of core and random, which indicates that the original user selection could have carried over to the first-hop connections to some extent.  Interestingly, the subgraph users are more likely than either of the other sets to be protected.  This may be because users who are connected to the initial group, which we would characterize as more ``established", are more experienced than the average random user, as random users likely include many people who have signed up but have not made much use of their accounts.  The random set could, for example, include users who are not connected to anyone else.
-
-\begin{figure}[h]
- \centering
- \includegraphics[bb=0 0 800 500,scale=.2]{./images/lang-core.png}
- % lang-core.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
- \caption{For the core set, the percentage users who have marked Japanese as their Twitter language is more than four times that of the random set.}
-\label{fig:lang-core}
-\end{figure}
-
-\begin{figure}[h]
- \centering
- \includegraphics[bb=0 0 800 500,scale=.2]{./images/lang-rand.png}
-  % lang-rand.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
- \caption{English, Spanish, and Japanese are the top languages for both the connected and the random user sets.}
-\label{fig:lang-rand}
-\end{figure}
 
 \subsubsection{Language}
 
@@ -83,30 +107,6 @@ Korean & 0.1 &  0.1 & 0.0 \\ \hline
 \textit{Language distribution percentages for three data sets.}\\
 
 \subsubsection{Location}
-
-\begin{figure}[t]
- \centering
- \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-conn.png}
- % loca-conn.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
-\caption{}
-\label{fig:loca-conn}
-%\end{figure}
-
-%\begin{figure}
-% \centering
- \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-rand.png}
- % loca-rand.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
-\caption{}
-\label{fig:loca-rand}
-%\end{figure}
-
-%\begin{figure}
-% \centering
- \includegraphics[bb=0 0 800 500,scale=.2]{./images/loca-actu.png}
- % loca-actu.png: 800x500 pixel, 72dpi, 28.22x17.64 cm, bb=0 0 800 500
-\caption{The distribution of U.S. states for both the random and the connected datasets aligns well with the population census data.}
-\label{fig:loca-actu}
-\end{figure}
 
 We examined data for the ten U.S. states with the greatest number of associated users.  Distribution of locations was similar between the connected and random sets, and also aligned fairly well with population data (Figures \ref{fig:loca-conn}, \ref{fig:loca-rand}, \ref{fig:loca-actu}).  For the states that appear in all three data sets, all percentages are within 5\% of each other, and most are differ by no more than 2\%.  Also, the top five states are the same and in the same order.
 
@@ -135,3 +135,4 @@ The location attribute field has no enforced format, apart from length.  That is
 
 Given that there are hundreds of thousands of cities in the world, we decided to start our location analyses with U.S. states because of their familiarity to the authors.  Our approach is to filter users based on exact matches with a pre-compiled list of U.S. cities in the standard \textit{San Francisco, CA} or \textit{San Francisco, California} format.  If a user matches one of these locations exactly, the user cannot exactly match a different location.  For the top 100 most populous cities, we try to match the city name itself, without the state, with the intuition that, for example, users from \textit{San Francisco} would not find it necessary to specify their state.
 
+We find that 8\% of connected users and 5\% of random users are successfully matched to a state.
